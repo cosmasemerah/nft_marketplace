@@ -5,7 +5,7 @@ import rocket from '../../assets/RocketLaunch.svg';
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center justify-center space-y-10">
+    <div className="flex flex-col items-center justify-center space-y-10  px-7 py-10">
       <div>
         <h1 className="mb-2.5 text-3xl">Discover Digital Art & Collect NFTs</h1>
         <p className="text-base font-normal">
@@ -14,7 +14,7 @@ const HeroSection = () => {
         </p>
       </div>
 
-      <div className="w-full overflow-hidden rounded-lg bg-secondary">
+      <div className="w-full overflow-hidden rounded-xl bg-secondary">
         <img src={highlight} className="h-52 w-full" alt="Highlighted NFT" />
         <div className="space-y-2.5 p-5">
           <h3 className="text-2xl font-semibold">Space Walking</h3>
@@ -34,22 +34,22 @@ const HeroSection = () => {
 
       <div className="flex w-full items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold">
+          <h3 className="text-2xl font-bold">
             240k+
             <br /> <span className="text-base font-normal">Total Sale</span>
-          </h2>
+          </h3>
         </div>
         <div>
-          <h2 className="text-2xl font-bold">
+          <h3 className="text-2xl font-bold">
             100k+
             <br /> <span className="text-base font-normal">Auction</span>
-          </h2>
+          </h3>
         </div>
         <div>
-          <h2 className="text-2xl font-bold">
+          <h3 className="text-2xl font-bold">
             240k+
             <br /> <span className="text-base font-normal">Artists</span>
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
