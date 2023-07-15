@@ -13,22 +13,20 @@ const Trending = () => {
         </p>
       </div>
 
-      <div>
-        <div className="flex flex-col justify-center">
-          <img src={tre10} alt="" className="mb-[15px] rounded-xl" />
-          <div className="mb-[15px] flex items-center justify-between">
-            <img src={tre11} className="h-[95px] w-[95px] rounded-xl" alt="" />
-            <img src={tre12} className="h-[95px] w-[95px] rounded-xl" alt="" />
-            <h4 className="flex h-[95px] w-[95px] justify-center rounded-xl bg-cta px-[15px] py-8">
-              1025+
-            </h4>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold">DSGN Animals</h3>
-            <div className="flex items-center justify-start gap-1">
-              <img src={tre13} alt="" />
-              <p>MrFox</p>
-            </div>
+      <div className="flex flex-col justify-center">
+        <img src={tre10} alt="" className="mb-[15px] rounded-xl" />
+        <div className="mb-[15px] flex items-center justify-between">
+          <img src={tre11} className="h-[95px] w-[95px] rounded-xl" alt="" />
+          <img src={tre12} className="h-[95px] w-[95px] rounded-xl" alt="" />
+          <h4 className="flex h-[95px] w-[95px] justify-center rounded-xl bg-cta px-[15px] py-8">
+            1025+
+          </h4>
+        </div>
+        <div>
+          <h3 className="text-2xl font-semibold">DSGN Animals</h3>
+          <div className="flex items-center justify-start gap-1">
+            <img src={tre13} alt="" />
+            <p>MrFox</p>
           </div>
         </div>
       </div>

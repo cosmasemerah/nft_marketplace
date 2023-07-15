@@ -1,5 +1,8 @@
 import Navbar from '../../components/Navbar';
+import Category from './Category';
+import Discover from './Discover';
 import HeroSection from './Hero';
+import TopCreators from './TopCreators';
 import Trending from './Trending';
 
 const HomePage = () => {
@@ -10,6 +13,9 @@ const HomePage = () => {
         <div className="max-w-9xl mx-auto w-full">
           <HeroSection />
           <Trending />
+          <TopCreators />
+          <Category />
+          <Discover />
         </div>
       </main>
     </div>
