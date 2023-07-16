@@ -1,7 +1,6 @@
-import React from "react";
-import logo from "../assets/Logo.svg";
-import logo_sm from "../assets/logo_sm.svg";
-import burgerMenu from "../assets/BurgerMenu.svg";
+import logo from '../assets/Logo.svg';
+import logo_sm from '../assets/logo_sm.svg';
+import burgerMenu from '../assets/BurgerMenu.svg';
 
 const Navbar = () => {
   return (
