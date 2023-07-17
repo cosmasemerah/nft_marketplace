@@ -9,10 +9,19 @@ import Button from '../../components/Button';
 
 const Discover = () => {
   return (
-    <div className="space-y-10  px-7 py-10">
-      <div>
-        <h2 className="mb-2.5 text-3xl">Discover More NFTs</h2>
-        <p className="text-base font-normal">Explore new trending NFTs</p>
+    <div className="md:  space-y-10 px-7 pb-14 pt-10 md:px-18 md:pb-20">
+      <div className="flex items-end justify-between">
+        <div className="md:w-1/2">
+          <h2 className="mb-2.5 text-3xl font-semibold">Discover More NFTs</h2>
+          <p className="text-base font-normal">Explore new trending NFTs</p>
+        </div>
+
+        <Button className="h-[60px] rounded-3xl px-12 ring-2 ring-inset ring-cta md:inline-block">
+          <span className="flex items-center justify-center">
+            <img src={Eye} className="mr-3 fill-cta " />
+            See All
+          </span>
+        </Button>
       </div>
 
       <div className="flex flex-wrap items-center justify-center gap-5">
@@ -56,7 +65,7 @@ const Discover = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center rounded-2xl bg-secondary">
+        <div className="flex flex-col justify-center rounded-2xl bg-secondary md:hidden">
           <img src={dis03} className="rounded-t-2xl" alt="" />
           <div className="p-5 pb-[25px]">
             <h3 className="mb-[5px] text-2xl font-semibold">AstroFiction</h3>
@@ -77,7 +86,7 @@ const Discover = () => {
         </div>
       </div>
 
-      <Button className="h-[60px] w-full rounded-3xl ring-2 ring-inset ring-cta">
+      <Button className="h-[60px] w-full rounded-3xl px-12 ring-2 ring-inset ring-cta md:hidden">
         <span className="flex items-center justify-center">
           <img src={Eye} className="mr-3 fill-cta " />
           See All

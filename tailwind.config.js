@@ -21,20 +21,27 @@ export default {
         caption: '#858584',
       },
       padding: {
+        6: '22px',
         7: '30px',
         12: '50px',
+        14: '60px',
+        18: '72px',
       },
       height: {
         7: '30px',
         12: '50px',
         14: '60px',
         24: '100px',
+        52: '206px',
+        56: '221px',
       },
       width: {
         7: '30px',
         12: '50px',
         14: '60px',
         24: '100px',
+        52: '206px',
+        56: '221px',
       },
       backgroundImage: {
         art: "url('./src/assets/cat01.svg')",

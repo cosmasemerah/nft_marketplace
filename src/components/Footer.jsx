@@ -3,11 +3,12 @@ import discord from '../assets/DiscordLogo.svg';
 import youtube from '../assets/YoutubeLogo.svg';
 import twitter from '../assets/TwitterLogo.svg';
 import instagram from '../assets/InstagramLogo.svg';
+
 import SubscribeForm from './SubscribeForm';
 
 const Footer = () => {
   return (
-    <div className="space-y-10  bg-secondary px-7 py-10">
+    <div className="space-y-10  divide-y bg-secondary px-7 py-10">
       <div className="flex flex-col space-y-[30px]">
         <div className="space-y-5">
           <img src={logo} alt="logo" />
@@ -47,6 +48,7 @@ const Footer = () => {
           <SubscribeForm />
         </div>
       </div>
+      <p className="pt-5 text-xs text-mute">Ⓒ NFT Market. Cosmas Emerah 2023</p>
     </div>
   );
 };

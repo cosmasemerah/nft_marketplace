@@ -9,16 +9,16 @@ import Planet from '../../assets/Planet.svg';
 
 const Category = () => {
   return (
-    <div className="space-y-10  px-7 py-10">
+    <div className="space-y-10  px-7 py-10 md:px-18">
       <div>
-        <h2 className="mb-2.5 text-3xl">Browse Categories</h2>
+        <h2 className="mb-2.5 text-3xl font-semibold">Browse Categories</h2>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-5">
+      <div className="flex flex-wrap items-center justify-center gap-5 md:gap-[30px]">
         {/* Art */}
         <div className="flex flex-col justify-center">
           <div className="h-[142px] rounded-t-[20px] bg-art bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center  rounded-t-[20px]   backdrop-blur">
+            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px]  backdrop-blur   md:w-[150px]">
               <img src={PaintBrush} alt="art" className="h-20 w-20" />
             </div>
           </div>
@@ -30,7 +30,7 @@ const Category = () => {
         {/* Collectibles */}
         <div className="flex flex-col justify-center">
           <div className="h-[142px] rounded-t-[20px] bg-collectibles bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px]   backdrop-blur">
+            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
               <img src={Swatches} alt="Collectibles" className="h-20 w-20" />
             </div>
           </div>
@@ -42,7 +42,7 @@ const Category = () => {
         {/* Music */}
         <div className="flex flex-col justify-center">
           <div className="h-[142px] rounded-t-[20px] bg-music bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px]  backdrop-blur">
+            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur  md:w-[150px]">
               <img src={MusicNotes} alt="Music" className="h-20 w-20" />
             </div>
           </div>
@@ -54,7 +54,7 @@ const Category = () => {
         {/* Photography */}
         <div className="flex flex-col justify-center">
           <div className="h-[142px] rounded-t-[20px] bg-photography bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px]   backdrop-blur">
+            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
               <img src={Camera} alt="Photography" className="h-20 w-20" />
             </div>
           </div>
@@ -66,7 +66,7 @@ const Category = () => {
         {/* Video */}
         <div className="flex flex-col justify-center">
           <div className="h-[142px] rounded-t-[20px] bg-video bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px]   backdrop-blur">
+            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
               <img src={VideoCamera} alt="Video" className="h-20 w-20" />
             </div>
           </div>
@@ -78,7 +78,7 @@ const Category = () => {
         {/* Utility */}
         <div className="flex flex-col justify-center">
           <div className="h-[142px] rounded-t-[20px] bg-utility bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px]   backdrop-blur">
+            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
               <img src={MagicWand} alt="Utility" className="h-20 w-20" />
             </div>
           </div>
@@ -90,7 +90,7 @@ const Category = () => {
         {/* Sports */}
         <div className="flex flex-col justify-center">
           <div className="h-[142px] rounded-t-[20px] bg-sport bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px]   backdrop-blur">
+            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
               <img src={Basketball} alt="Sport" className="h-20 w-20" />
             </div>
           </div>
@@ -102,7 +102,7 @@ const Category = () => {
         {/* Virtual Worlds */}
         <div className="flex flex-col justify-center">
           <div className="h-[142px] rounded-t-[20px] bg-vrworld bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px]   backdrop-blur">
+            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
               <img src={Planet} alt="Virtual World" className="h-20 w-20" />
             </div>
           </div>
