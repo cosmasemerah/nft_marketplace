@@ -1,24 +1,26 @@
-import envelope from '../assets/envelope.svg';
 import Button from './Button';
 
 const SubscribeForm = () => {
   return (
     <form>
-      <input
-        className="mb-4 h-[46px] w-full rounded-3xl px-5"
-        type="email"
-        placeholder="Enter Your Email Address"
-      />
-      <Button
-        className="h-[46px] w-full rounded-3xl bg-cta"
-        type="submit"
-        disabled
-      >
-        <span className="flex items-center justify-center">
-          <img src={envelope} className="mr-3" />
+      <label className="sr-only" htmlFor="Subscribe">
+        Subscribe
+      </label>
+      <div className="relative flex max-w-[420px] justify-center">
+        <input
+          className="mb-4 h-[46px] w-full rounded-3xl px-5"
+          id="Subscribe"
+          type="email"
+          placeholder="Enter Your Email Address"
+        />
+        <Button
+          className="absolute right-0 h-[46px] rounded-3xl bg-cta px-12"
+          type="submit"
+          disabled
+        >
           Subscribe
-        </span>
-      </Button>
+        </Button>
+      </div>
     </form>
   );
 };

@@ -4,11 +4,12 @@ import youtube from '../assets/YoutubeLogo.svg';
 import twitter from '../assets/TwitterLogo.svg';
 import instagram from '../assets/InstagramLogo.svg';
 
-import SubscribeForm from './SubscribeForm';
+import SubscribeForm from './SubscribeWidget';
+import SubscribeTablet from './SubscribeForm';
 
 const Footer = () => {
   return (
-    <div className="space-y-10  divide-y bg-secondary px-7 py-10">
+    <div className="space-y-10  divide-y bg-secondary px-7 py-10 md:px-18">
       <div className="flex flex-col space-y-[30px]">
         <div className="space-y-5">
           <img src={logo} alt="logo" />
@@ -45,7 +46,12 @@ const Footer = () => {
             Get exclusive promotions & updates straight to your inbox.
           </p>
 
-          <SubscribeForm />
+          <div className="md:hidden">
+            <SubscribeForm />
+          </div>
+          <div className="hidden md:block">
+            <SubscribeTablet />
+          </div>
         </div>
       </div>
       <p className="pt-5 text-xs text-mute">Ⓒ NFT Market. Cosmas Emerah 2023</p>

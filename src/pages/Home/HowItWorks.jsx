@@ -4,14 +4,14 @@ import earningIcon from '../../assets/earning_ico.svg';
 
 const HowItWorks = () => {
   return (
-    <div className="space-y-10  px-7 py-10">
+    <div className="space-y-10  px-7 py-10 md:px-18">
       <div>
         <h2 className="mb-2.5 text-3xl">How It Works</h2>
         <p className="text-base font-normal">Find out how to get started</p>
       </div>
 
-      <div className="flex flex-col space-y-5">
-        <div className="flex items-center justify-center space-x-5 rounded-lg bg-secondary p-5">
+      <div className="flex flex-col space-y-5 md:flex-row  md:space-x-5 md:space-y-0 md:text-center">
+        <div className="flex flex-1 items-center space-x-5 space-y-5 rounded-lg bg-secondary p-5 md:flex-col md:space-x-0 md:pb-7 md:pt-2.5">
           <img
             src={collectionIcon}
             className="h-24 w-24"
@@ -26,7 +26,7 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center space-x-5 rounded-lg bg-secondary p-5">
+        <div className="flex flex-1 items-center space-x-5 space-y-5 rounded-lg bg-secondary p-5 md:flex-col md:space-x-0 md:pb-7 md:pt-2.5">
           <img src={earningIcon} className="h-24 w-24" alt="Start Earning" />
           <div className="flex flex-col space-y-2.5">
             <h3 className="text-base font-semibold">Start Earning</h3>
@@ -37,7 +37,7 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center space-x-5 rounded-lg bg-secondary p-5">
+        <div className="flex flex-1 items-center space-x-5 space-y-5 rounded-lg bg-secondary p-5 md:flex-col md:space-x-0 md:pb-7 md:pt-2.5">
           <img src={walletIcon} className="h-24 w-24" alt="setup your wallet" />
           <div className="flex flex-col space-y-2.5">
             <h3 className="text-base font-semibold">Setup Your Wallet</h3>

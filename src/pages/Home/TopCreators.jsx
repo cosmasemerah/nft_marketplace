@@ -17,7 +17,7 @@ const TopCreators = () => {
             Checkout Top Rated Creators on the NFT Marketplace
           </p>
         </div>
-        <Button className="h-[60px] rounded-3xl px-12 ring-2 ring-inset ring-cta md:inline-block">
+        <Button className="hidden h-[60px] rounded-3xl px-12 ring-2 ring-inset ring-cta md:inline-block">
           <span className="flex items-center justify-center">
             <img src={rocket} className="mr-3 fill-cta " />
             View Rankings

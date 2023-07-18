@@ -16,7 +16,7 @@ const Discover = () => {
           <p className="text-base font-normal">Explore new trending NFTs</p>
         </div>
 
-        <Button className="h-[60px] rounded-3xl px-12 ring-2 ring-inset ring-cta md:inline-block">
+        <Button className="hidden h-[60px] rounded-3xl px-12 ring-2 ring-inset ring-cta md:inline-block">
           <span className="flex items-center justify-center">
             <img src={Eye} className="mr-3 fill-cta " />
             See All
@@ -26,7 +26,7 @@ const Discover = () => {
 
       <div className="flex flex-wrap items-center justify-center gap-5">
         <div className="flex flex-col justify-center rounded-2xl bg-secondary">
-          <img src={dis01} className="rounded-t-2xl" alt="" />
+          <img src={dis01} className="h-auto max-w-full rounded-t-2xl" alt="" />
           <div className="p-5 pb-[25px]">
             <h3 className="mb-[5px] text-2xl font-semibold">Distant Galaxy</h3>
             <div className="mb-[25px] flex items-center">
@@ -46,7 +46,7 @@ const Discover = () => {
         </div>
 
         <div className="flex flex-col justify-center rounded-2xl bg-secondary">
-          <img src={dis02} className="rounded-t-2xl" alt="" />
+          <img src={dis02} className="h-auto max-w-full rounded-t-2xl" alt="" />
           <div className="p-5 pb-[25px]">
             <h3 className="mb-[5px] text-2xl font-semibold">Life On Edena</h3>
             <div className="mb-[25px] flex items-center">

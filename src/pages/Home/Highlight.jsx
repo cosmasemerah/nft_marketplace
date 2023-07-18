@@ -6,8 +6,8 @@ import AuctionTimer from '../../components/AuctionTimer';
 
 const Highlight = () => {
   return (
-    <div className="space-y-10 bg-highlight  bg-cover px-7 pb-10 pt-[120px] md:px-[82px] md:pt-[360px]">
-      <div className="flex items-center justify-center md:flex-row">
+    <div className="space-y-10 bg-highlight bg-cover px-7 pb-10 pt-[120px] md:bg-highlight_tablet md:px-[82px] md:pt-[360px]">
+      <div className="flex items-end justify-center md:flex-row md:justify-between">
         <div className="flex flex-col justify-start gap-[30px]">
           <div className="flex w-fit items-center gap-3 rounded-2xl bg-secondary px-5 py-2.5">
             <img src={hivatar} className="rounded-full" alt="artist" />

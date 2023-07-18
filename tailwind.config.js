@@ -54,6 +54,8 @@ export default {
         vrworld: "url('./src/assets/cat08.svg')",
         highlight:
           "linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),url('./src/assets/highlight_mobile.svg')",
+        highlight_tablet:
+          "linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),url('./src/assets/highlight_tablet.svg')",
       },
     },
   },
