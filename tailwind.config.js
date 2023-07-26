@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        work: ['Work Sans', 'sans-serif'],
+        work: ['Work Sans', ' Helvetica'],
+        space: ['Space Mono', 'monospace'],
       },
       fontSize: {
         xs: ['0.75rem', { lineHeight: 1.4 }], //12px
@@ -12,6 +13,7 @@ export default {
         '2xl': ['1.375rem', { lineHeight: 1.4 }], //22px
         '3xl': ['1.75rem', { lineHeight: 1.4 }], //28px
         '4xl': ['2.375rem', { lineHeight: 1.4 }], //38px
+        '6xl': ['4.1875rem', { lineHeight: 1.4 }], //67px
       },
       colors: {
         primary: '#2B2B2B',
@@ -21,27 +23,32 @@ export default {
         caption: '#858584',
       },
       padding: {
-        6: '22px',
-        7: '30px',
-        12: '50px',
-        14: '60px',
-        18: '72px',
+        6: '1.375rem', //22px
+        7: '1.875rem', //30px
+        12: '3.125rem', //50px
+        14: '3.75rem', //60px
+        18: '4.5', //72px
       },
       height: {
-        7: '30px',
-        12: '50px',
-        14: '60px',
-        24: '100px',
-        52: '206px',
-        56: '221px',
+        7: '1.875rem', //30px
+        12: '3.125rem', //50px
+        14: '3.75rem', //60px
+        24: '6.25rem', //100px
+        32: '8.875rem', //142px
+        52: '12.875rem', //206px
+        54: '13.0625rem', //209px
+        56: '13.8125rem', //221px
       },
       width: {
         7: '30px',
-        12: '50px',
-        14: '60px',
-        24: '100px',
-        52: '206px',
-        56: '221px',
+        12: '3.125rem', //50px
+        14: '3.75rem', //60px
+        24: '6.25rem', //100px
+        52: '12.875rem', //206px
+        56: '13.8125rem', //221px
+        xs: '19.6875rem',
+        '2xl': '43.125rem',
+        '5xl': '65.625rem',
       },
       backgroundImage: {
         art: "url('./src/assets/cat01.svg')",
@@ -56,6 +63,18 @@ export default {
           "linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),url('./src/assets/highlight_mobile.svg')",
         highlight_tablet:
           "linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),url('./src/assets/highlight_tablet.svg')",
+      },
+      screens: {
+        sm: '23.4375rem',
+        md: '52.125rem',
+        lg: '80rem',
+      },
+      spacing: {
+        7: '1.875rem', //30px
+        14: '3.75rem', //60px
+      },
+      borderRadius: {
+        '3xl': '1.25rem',
       },
     },
   },

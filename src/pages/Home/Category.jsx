@@ -9,105 +9,141 @@ import Planet from '../../assets/Planet.svg';
 
 const Category = () => {
   return (
-    <div className="space-y-10  px-7 py-10 md:px-18">
-      <div>
-        <h2 className="mb-2.5 text-3xl font-semibold">Browse Categories</h2>
-      </div>
-
-      <div className="flex flex-wrap items-center justify-center gap-5 md:gap-[30px]">
-        {/* Art */}
-        <div className="flex flex-col justify-center">
-          <div className="h-[142px] rounded-t-[20px] bg-art bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px]  backdrop-blur   md:w-[150px]">
-              <img src={PaintBrush} alt="art" className="h-20 w-20" />
-            </div>
-          </div>
-          <div className="rounded-b-[20px] bg-secondary p-5 pb-[25px]">
-            <p>Art</p>
-          </div>
+    <div className="flex  justify-center self-stretch px-7 py-10 md:px-18 lg:py-20">
+      <div className="flex w-xs flex-col gap-y-10 md:w-2xl lg:w-5xl lg:gap-y-14">
+        <div>
+          <h2 className="text-3xl font-semibold lg:text-4xl">
+            Browse Categories
+          </h2>
         </div>
 
-        {/* Collectibles */}
-        <div className="flex flex-col justify-center">
-          <div className="h-[142px] rounded-t-[20px] bg-collectibles bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
-              <img src={Swatches} alt="Collectibles" className="h-20 w-20" />
+        <div className="flex flex-wrap items-center justify-center gap-5 md:gap-[30px]">
+          {/* Art */}
+          <div className="flex flex-col ">
+            <div className="h-32 rounded-t-3xl bg-art bg-cover bg-center bg-no-repeat lg:h-60">
+              <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-3xl  backdrop-blur  md:w-[150px] lg:w-60">
+                <img
+                  src={PaintBrush}
+                  alt="art"
+                  className="h-20 w-20 lg:h-24 lg:w-24"
+                />
+              </div>
+            </div>
+            <div className="rounded-b-3xl bg-secondary p-5 pb-[25px] lg:text-2xl">
+              <p>Art</p>
             </div>
           </div>
-          <div className="rounded-b-[20px] bg-secondary p-5 pb-[25px]">
-            <p>Collectibles</p>
-          </div>
-        </div>
 
-        {/* Music */}
-        <div className="flex flex-col justify-center">
-          <div className="h-[142px] rounded-t-[20px] bg-music bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur  md:w-[150px]">
-              <img src={MusicNotes} alt="Music" className="h-20 w-20" />
+          {/* Collectibles */}
+          <div className="flex flex-col ">
+            <div className="h-32 rounded-t-3xl bg-collectibles bg-cover bg-center bg-no-repeat lg:h-60">
+              <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-3xl backdrop-blur   md:w-[150px] lg:w-60">
+                <img
+                  src={Swatches}
+                  alt="Collectibles"
+                  className="h-20 w-20 lg:h-24 lg:w-24"
+                />
+              </div>
+            </div>
+            <div className="rounded-b-3xl bg-secondary p-5 pb-[25px] lg:text-2xl">
+              <p>Collectibles</p>
             </div>
           </div>
-          <div className="rounded-b-[20px] bg-secondary p-5 pb-[25px]">
-            <p>Music</p>
-          </div>
-        </div>
 
-        {/* Photography */}
-        <div className="flex flex-col justify-center">
-          <div className="h-[142px] rounded-t-[20px] bg-photography bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
-              <img src={Camera} alt="Photography" className="h-20 w-20" />
+          {/* Music */}
+          <div className="flex flex-col ">
+            <div className="h-32 rounded-t-3xl bg-music bg-cover bg-center bg-no-repeat lg:h-60">
+              <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-3xl backdrop-blur  md:w-[150px] lg:w-60">
+                <img
+                  src={MusicNotes}
+                  alt="Music"
+                  className="h-20 w-20 lg:h-24 lg:w-24"
+                />
+              </div>
+            </div>
+            <div className="rounded-b-3xl bg-secondary p-5 pb-[25px] lg:text-2xl">
+              <p>Music</p>
             </div>
           </div>
-          <div className="rounded-b-[20px] bg-secondary p-5 pb-[25px]">
-            <p>Photography</p>
-          </div>
-        </div>
 
-        {/* Video */}
-        <div className="flex flex-col justify-center">
-          <div className="h-[142px] rounded-t-[20px] bg-video bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
-              <img src={VideoCamera} alt="Video" className="h-20 w-20" />
+          {/* Photography */}
+          <div className="flex flex-col ">
+            <div className="h-32 rounded-t-3xl bg-photography bg-cover bg-center bg-no-repeat lg:h-60">
+              <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-3xl backdrop-blur   md:w-[150px] lg:w-60">
+                <img
+                  src={Camera}
+                  alt="Photography"
+                  className="h-20 w-20 lg:h-24 lg:w-24"
+                />
+              </div>
+            </div>
+            <div className="rounded-b-3xl bg-secondary p-5 pb-[25px] lg:text-2xl">
+              <p>Photography</p>
             </div>
           </div>
-          <div className="rounded-b-[20px] bg-secondary p-5 pb-[25px]">
-            <p>Video</p>
-          </div>
-        </div>
 
-        {/* Utility */}
-        <div className="flex flex-col justify-center">
-          <div className="h-[142px] rounded-t-[20px] bg-utility bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
-              <img src={MagicWand} alt="Utility" className="h-20 w-20" />
+          {/* Video */}
+          <div className="flex flex-col ">
+            <div className="h-32 rounded-t-3xl bg-video bg-cover bg-center bg-no-repeat lg:h-60">
+              <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-3xl backdrop-blur   md:w-[150px] lg:w-60">
+                <img
+                  src={VideoCamera}
+                  alt="Video"
+                  className="h-20 w-20 lg:h-24 lg:w-24"
+                />
+              </div>
+            </div>
+            <div className="rounded-b-3xl bg-secondary p-5 pb-[25px] lg:text-2xl">
+              <p>Video</p>
             </div>
           </div>
-          <div className="rounded-b-[20px] bg-secondary p-5 pb-[25px]">
-            <p>Utility</p>
-          </div>
-        </div>
 
-        {/* Sports */}
-        <div className="flex flex-col justify-center">
-          <div className="h-[142px] rounded-t-[20px] bg-sport bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
-              <img src={Basketball} alt="Sport" className="h-20 w-20" />
+          {/* Utility */}
+          <div className="flex flex-col">
+            <div className="h-32 rounded-t-3xl bg-utility bg-cover bg-center bg-no-repeat lg:h-60">
+              <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-3xl backdrop-blur   md:w-[150px] lg:w-60">
+                <img
+                  src={MagicWand}
+                  alt="Utility"
+                  className="h-20 w-20 lg:h-24 lg:w-24"
+                />
+              </div>
+            </div>
+            <div className="rounded-b-3xl bg-secondary p-5 pb-[25px] lg:text-2xl">
+              <p>Utility</p>
             </div>
           </div>
-          <div className="rounded-b-[20px] bg-secondary p-5 pb-[25px]">
-            <p>Sport</p>
-          </div>
-        </div>
 
-        {/* Virtual Worlds */}
-        <div className="flex flex-col justify-center">
-          <div className="h-[142px] rounded-t-[20px] bg-vrworld bg-cover bg-no-repeat">
-            <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-[20px] backdrop-blur   md:w-[150px]">
-              <img src={Planet} alt="Virtual World" className="h-20 w-20" />
+          {/* Sports */}
+          <div className="flex flex-col ">
+            <div className="h-32 rounded-t-3xl bg-sport bg-cover bg-center bg-no-repeat lg:h-60">
+              <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-3xl backdrop-blur   md:w-[150px] lg:w-60">
+                <img
+                  src={Basketball}
+                  alt="Sport"
+                  className="h-20 w-20 lg:h-24 lg:w-24"
+                />
+              </div>
+            </div>
+            <div className="rounded-b-3xl bg-secondary p-5 pb-[25px] lg:text-2xl">
+              <p>Sport</p>
             </div>
           </div>
-          <div className="rounded-b-[20px] bg-secondary p-5 pb-[25px]">
-            <p>Virtual World</p>
+
+          {/* Virtual Worlds */}
+          <div className="flex flex-col justify-center">
+            <div className="h-32 rounded-t-3xl bg-vrworld bg-cover bg-center bg-no-repeat lg:h-60">
+              <div className="flex h-full w-[147.5px] items-center justify-center rounded-t-3xl backdrop-blur   md:w-[150px] lg:w-60">
+                <img
+                  src={Planet}
+                  alt="Virtual World"
+                  className="h-20 w-20 lg:h-24 lg:w-24"
+                />
+              </div>
+            </div>
+            <div className="rounded-b-3xl bg-secondary p-5 pb-[25px] lg:text-2xl">
+              <p>Virtual World</p>
+            </div>
           </div>
         </div>
       </div>

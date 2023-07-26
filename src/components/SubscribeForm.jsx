@@ -8,7 +8,7 @@ const SubscribeForm = () => {
       </label>
       <div className="relative flex max-w-[420px] justify-center">
         <input
-          className="mb-4 h-[46px] w-full rounded-3xl px-5"
+          className="h-[46px] w-full rounded-3xl px-5 text-primary"
           id="Subscribe"
           type="email"
           placeholder="Enter Your Email Address"

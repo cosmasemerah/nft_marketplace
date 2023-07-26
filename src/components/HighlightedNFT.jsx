@@ -4,11 +4,7 @@ import highlightArtist from '../assets/highlightArtist.png';
 const HighlightedNFT = () => {
   return (
     <div className="w-full overflow-hidden rounded-xl bg-secondary">
-      <img
-        src={highlight}
-        className="h-52 w-full md:h-56"
-        alt="Highlighted NFT"
-      />
+      <img src={highlight} alt="Highlighted NFT" />
       <div className="space-y-2.5 px-5 py-6">
         <h3 className="text-2xl font-semibold">Space Walking</h3>
         <div className="flex items-center">

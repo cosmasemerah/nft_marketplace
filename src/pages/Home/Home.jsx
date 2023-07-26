@@ -11,10 +11,10 @@ import Trending from './Trending';
 
 const HomePage = () => {
   return (
-    <div className="flex flex-1 flex-col">
+    <div className="flex flex-col">
       <Navbar />
       <main>
-        <div className="max-w-9xl mx-auto w-full">
+        <div className="mx-auto flex h-auto w-full flex-col items-center">
           <HeroSection />
           <Trending />
           <TopCreators />
@@ -23,9 +23,9 @@ const HomePage = () => {
           <Highlight />
           <HowItWorks />
           <Subscribe />
-          <Footer />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
