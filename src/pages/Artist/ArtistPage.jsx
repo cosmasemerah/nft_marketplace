@@ -121,12 +121,12 @@ const ArtistPage = () => {
           </div>
 
           <div className="flex flex-col items-start gap-2.5 capitalize leading-8 lg:text-2xl">
-            <h3 className="text-caption">Bio</h3>
+            <h3 className="font-space text-caption">Bio</h3>
             <p>The internet's friendliest designer kid.</p>
           </div>
 
           <div className="flex flex-col items-start gap-2.5 leading-8 lg:text-2xl">
-            <h3 className="text-caption">Links</h3>
+            <h3 className="font-space text-caption">Links</h3>
             <div className="flex gap-2.5">
               <img
                 src={globe}
