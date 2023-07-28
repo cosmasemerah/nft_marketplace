@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
             <div>
               <p className="mb-3.5 text-mute">Join our community</p>
-              <div className="flex space-x-2.5">
+              <div className="flex gap-2.5">
                 <img src={discord} alt="discord" />
                 <img src={youtube} alt="youtube" />
                 <img src={twitter} alt="twitter" />

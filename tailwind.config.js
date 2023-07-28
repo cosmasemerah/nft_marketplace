@@ -13,6 +13,7 @@ export default {
         '2xl': ['1.375rem', { lineHeight: 1.4 }], //22px
         '3xl': ['1.75rem', { lineHeight: 1.4 }], //28px
         '4xl': ['2.375rem', { lineHeight: 1.4 }], //38px
+        '5xl': ['3.1875rem', { lineHeight: 1.1 }], //51px
         '6xl': ['4.1875rem', { lineHeight: 1.4 }], //67px
       },
       colors: {
@@ -38,6 +39,7 @@ export default {
         52: '12.875rem', //206px
         54: '13.0625rem', //209px
         56: '13.8125rem', //221px
+        64: '15.625rem', // 250px
       },
       width: {
         7: '30px',
@@ -49,6 +51,14 @@ export default {
         xs: '19.6875rem',
         '2xl': '43.125rem',
         '5xl': '65.625rem',
+      },
+      minWidth: {
+        xs: '19.6875rem', // 315px
+        sm: '23.4375rem', // 375px
+        '2xl': '43.125rem', // 690px
+        md: '52.125rem', // 834px
+        '5xl': '65.625rem', // 1050px
+        lg: '80rem', //1280px
       },
       backgroundImage: {
         art: "url('./src/assets/cat01.svg')",

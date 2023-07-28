@@ -29,7 +29,7 @@ const HeroSection = () => {
           </Button>
 
           <div className="flex items-center gap-7 self-stretch">
-            <div className="flex-1">
+            <div className="flex flex-1 justify-center">
               <h3 className="font-space text-2xl font-bold">
                 240k+
                 <br />{' '}
@@ -38,14 +38,14 @@ const HeroSection = () => {
                 </span>
               </h3>
             </div>
-            <div className="flex-1">
+            <div className="flex flex-1 justify-center">
               <h3 className="font-space text-2xl font-bold">
                 100k+
                 <br />{' '}
                 <span className="font-work text-base font-normal">Auction</span>
               </h3>
             </div>
-            <div className="flex-1">
+            <div className="flex flex-1 justify-center">
               <h3 className="font-space text-2xl font-bold">
                 240k+
                 <br />{' '}
