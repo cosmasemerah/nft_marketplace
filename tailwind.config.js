@@ -60,6 +60,14 @@ export default {
         '5xl': '65.625rem', // 1050px
         lg: '80rem', //1280px
       },
+      maxWidth: {
+        xs: '19.6875rem', // 315px
+        sm: '23.4375rem', // 375px
+        '2xl': '43.125rem', // 690px
+        md: '52.125rem', // 834px
+        '5xl': '65.625rem', // 1050px
+        lg: '80rem', //1280px
+      },
       backgroundImage: {
         art: "url('./src/assets/cat01.svg')",
         collectibles: "url('./src/assets/cat02.svg')",

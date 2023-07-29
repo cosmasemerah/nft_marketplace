@@ -1,12 +1,12 @@
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import NftPage from './pages/Nft/NftPage';
+import Marketplace from './pages/Marketplace/Marketplace';
 
 function App() {
   return (
     <div className="flex flex-col">
       <Navbar />
-      <NftPage />
+      <Marketplace />
       <Footer />
     </div>
   );
