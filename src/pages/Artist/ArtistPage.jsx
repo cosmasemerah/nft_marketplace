@@ -160,19 +160,19 @@ const ArtistPage = () => {
 
       <div className="flex items-center justify-center gap-5 self-stretch border border-secondary">
         <div className="flex h-14 w-xs gap-5 md:w-2xl lg:w-5xl lg:text-2xl">
-          <div className="h-full flex-1 items-center justify-center border-b-2">
+          <div className="flex h-full flex-1 items-center justify-center border-b-2">
             Created
             <span className="ml-4 hidden rounded-3xl bg-secondary px-4 py-2 font-space text-base md:flex">
               302
             </span>
           </div>
-          <div className="h-full flex-1 items-center justify-center">
+          <div className="flex h-full flex-1 items-center justify-center">
             Owned
             <span className="ml-4 hidden rounded-3xl bg-secondary px-4 py-2 font-space text-base md:flex">
               62
             </span>
           </div>
-          <div className="h-full flex-1 items-center justify-center">
+          <div className="flex h-full flex-1 items-center justify-center">
             Collection
             <span className="ml-4 hidden rounded-3xl bg-secondary px-4 py-2 font-space text-base md:flex">
               18

@@ -1,5 +1,3 @@
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
 import Category from './Category';
 import Discover from './Discover';
 import HeroSection from './Hero';
@@ -12,7 +10,6 @@ import Trending from './Trending';
 const HomePage = () => {
   return (
     <div className="flex flex-col">
-      <Navbar />
       <main>
         <div className="mx-auto flex h-auto w-full flex-col items-center">
           <HeroSection />
@@ -25,7 +22,6 @@ const HomePage = () => {
           <Subscribe />
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

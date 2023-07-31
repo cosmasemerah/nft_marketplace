@@ -22,6 +22,7 @@ export default {
         cta: '#A259FF',
         mute: '#CCCCCC',
         caption: '#858584',
+        green: '#00AC4F',
       },
       padding: {
         6: '1.375rem', //22px

@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="flex justify-center self-stretch bg-secondary px-7 py-10 md:px-18">
       <div className="flex w-xs flex-col gap-10 divide-y md:w-2xl lg:w-5xl">
-        <div className="flex max-w-[95%] flex-col justify-between gap-y-7 lg:flex-row lg:gap-x-10 lg:self-center">
+        <div className="flex max-w-[98%] flex-col justify-between gap-y-7 lg:flex-row lg:gap-x-10 lg:self-center">
           <div className="space-y-5">
             <img src={logo} alt="logo" />
             <p className="text-mute">
