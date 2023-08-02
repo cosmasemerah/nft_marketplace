@@ -1,6 +1,6 @@
-import walletIcon from '../../assets/wallet_ico.svg';
-import collectionIcon from '../../assets/collection_ico.svg';
-import earningIcon from '../../assets/earning_ico.svg';
+import walletIcon from '@assets/wallet_ico.svg';
+import collectionIcon from '@assets/collection_ico.svg';
+import earningIcon from '@assets/earning_ico.svg';
 
 const HowItWorks = () => {
   return (

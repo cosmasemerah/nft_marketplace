@@ -1,16 +1,16 @@
-import artBg from '../../assets/artbg.svg';
-import avatar from '../../assets/artvatar.svg';
-import globe from '../../assets/Globe.svg';
-import discord from '../../assets/DiscordLogo.svg';
-import youtube from '../../assets/YoutubeLogo.svg';
-import twitter from '../../assets/TwitterLogo.svg';
-import instagram from '../../assets/InstagramLogo.svg';
-import dis01 from '../../assets/dis01.svg';
-import disA01 from '../../assets/disA01.svg';
-import dis02 from '../../assets/dis02.svg';
-import disA02 from '../../assets/disA02.svg';
-import dis03 from '../../assets/dis03.svg';
-import disA03 from '../../assets/disA03.svg';
+import artBg from '@assets/artbg.svg';
+import avatar from '@assets/artvatar.svg';
+import globe from '@assets/Globe.svg';
+import discord from '@assets/DiscordLogo.svg';
+import youtube from '@assets/YoutubeLogo.svg';
+import twitter from '@assets/TwitterLogo.svg';
+import instagram from '@assets/InstagramLogo.svg';
+import dis01 from '@assets/dis1.svg';
+import disA01 from '@assets/disA1.svg';
+import dis02 from '@assets/dis2.svg';
+import disA02 from '@assets/disA2.svg';
+import dis03 from '@assets/dis3.svg';
+import disA03 from '@assets/disA3.svg';
 
 const ArtistPage = () => {
   return (

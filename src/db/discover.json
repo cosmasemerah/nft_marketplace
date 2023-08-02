@@ -1,0 +1,65 @@
+[
+    {
+         "id": 1,
+         "name": "Distant Galaxy",
+         "artist": "MoonDancer",
+         "price": 1.63,
+         "highestBid": 0.33
+    },
+    {
+         "id": 2,
+         "name": "Life On Edena",
+         "artist": "NebulaKid",
+         "price": 1.1,
+         "highestBid": 0.5
+    },
+    {
+         "id": 3,
+         "name": "AstroFiction",
+         "artist": "Spaceone",
+         "price": 0.99,
+         "highestBid": 0.4
+    },
+    {
+         "id": 4,
+         "name": "CryptoCity",
+         "artist": "Animakid",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 5,
+         "name": "ColorfulDog 0524",
+         "artist": "Animakid",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 6,
+         "name": "Space Tales",
+         "artist": "Animakid",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 7,
+         "name": "Cherry Blossom Girl 037",
+         "artist": "Animakid",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 8,
+         "name": "Dancing Robots 0987",
+         "artist": "Animakid",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 9,
+         "name": "IceCream Ape",
+         "artist": "Animakid",
+         "price": 1.59,
+         "highestBid": 0.4
+    }
+]

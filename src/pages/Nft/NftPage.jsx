@@ -1,14 +1,14 @@
-import nftBg from '../../assets/nftBg.svg';
-import hivatar from '../../assets/cr09.svg';
-import globe from '../../assets/Globe.svg';
-import AuctionTimer from '../../components/AuctionTimer';
-import dis01 from '../../assets/dis01.svg';
-import disA01 from '../../assets/disA01.svg';
-import dis02 from '../../assets/dis02.svg';
-import disA02 from '../../assets/disA02.svg';
-import dis03 from '../../assets/dis03.svg';
-import disA03 from '../../assets/disA03.svg';
-import Button from '../../components/Button';
+import nftBg from '@assets/nftBg.svg';
+import hivatar from '@assets/cr09.svg';
+import globe from '@assets/Globe.svg';
+import AuctionTimer from '@components/AuctionTimer';
+import dis01 from '@assets/dis1.svg';
+import disA01 from '@assets/disA1.svg';
+import dis02 from '@assets/dis2.svg';
+import disA02 from '@assets/disA2.svg';
+import dis03 from '@assets/dis3.svg';
+import disA03 from '@assets/disA3.svg';
+import Button from '@components/Button';
 const NftPage1 = () => {
   return (
     <div className="flex flex-col items-center self-stretch">

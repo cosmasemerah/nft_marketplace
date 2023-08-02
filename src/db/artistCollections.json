@@ -1,0 +1,65 @@
+[
+    {
+         "id": 1,
+         "name": "Foxy Life",
+         "artist": "Orbitian",
+         "price": 1.63,
+         "highestBid": 0.33
+    },
+    {
+         "id": 2,
+         "name": "Cat From Future ",
+         "artist": "Orbitian",
+         "price": 1.1,
+         "highestBid": 0.5
+    },
+    {
+         "id": 3,
+         "name": "Psycho Dog",
+         "artist": "Orbitian",
+         "price": 0.99,
+         "highestBid": 0.4
+    },
+    {
+         "id": 4,
+         "name": "Designer Bear",
+         "artist": "Orbitian",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 5,
+         "name": "Dancing Robots 0375",
+         "artist": "Orbitian",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 6,
+         "name": "Dancing Robots 0356",
+         "artist": "Orbitian",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 7,
+         "name": "Dancing Robots 0321",
+         "artist": "Orbitian",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 8,
+         "name": "Dancing Robots 0512",
+         "artist": "Orbitian",
+         "price": 1.59,
+         "highestBid": 0.4
+    },
+    {
+         "id": 9,
+         "name": "Dancing Robots 0024",
+         "artist": "Orbitian",
+         "price": 1.59,
+         "highestBid": 0.4
+    }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Magic Mashrooms",
+    "artist": "Shroomie",
+    "auctionTime": {
+      "hours": 59,
+      "minutes": 59,
+      "seconds": 59
+    }
+  }
+]

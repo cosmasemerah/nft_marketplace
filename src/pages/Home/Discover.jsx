@@ -1,11 +1,16 @@
-import Eye from '../../assets/Eye.svg';
-import dis01 from '../../assets/dis01.svg';
-import disA01 from '../../assets/disA01.svg';
-import dis02 from '../../assets/dis02.svg';
-import disA02 from '../../assets/disA02.svg';
-import dis03 from '../../assets/dis03.svg';
-import disA03 from '../../assets/disA03.svg';
-import Button from '../../components/Button';
+import Eye from '@assets/Eye.svg';
+// import dis01 from '@assets/dis01.svg';
+// import disA01 from '@assets/disA01.svg';
+// import dis02 from '@assets/dis02.svg';
+// import disA02 from '@assets/disA02.svg';
+// import dis03 from '@assets/dis03.svg';
+// import disA03 from '@assets/disA03.svg';
+import Button from '@components/Button';
+
+import { topDiscoverImgData as images } from '../../utils/imageData';
+import db from '@db/discover.json';
+
+const topDiscoverData = db.slice(0, 3);
 
 const Discover = () => {
   return (
@@ -30,7 +35,40 @@ const Discover = () => {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-5">
-          <div className="flex flex-col justify-center rounded-2xl bg-secondary">
+          {topDiscoverData.map((item) => (
+            <div
+              className="flex flex-col justify-center rounded-2xl bg-secondary"
+              key={item.id}
+            >
+              <img
+                src={images[`dis${item.id}`]}
+                className="h-auto max-w-full rounded-t-2xl"
+                alt=""
+              />
+              <div className="p-5 pb-[25px]">
+                <h3 className="mb-[5px] text-2xl font-semibold">{item.name}</h3>
+                <div className="mb-[25px] flex items-center">
+                  <img
+                    src={images[`disA${item.id}`]}
+                    className="rounded-full"
+                    alt="artist"
+                  />
+                  <p className="ml-3">{item.artist}</p>
+                </div>
+                <div className="flex justify-between font-space">
+                  <p>
+                    <span className="text-caption">Price</span> <br />{' '}
+                    {item.price} ETH
+                  </p>
+                  <p>
+                    <span className="text-caption">Highest Bid</span> <br />{' '}
+                    {item.highestBid} wETH
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+          {/* <div className="flex flex-col justify-center rounded-2xl bg-secondary">
             <img
               src={dis01}
               className="h-auto max-w-full rounded-t-2xl"
@@ -98,7 +136,7 @@ const Discover = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <Button className="h-[60px] w-full rounded-3xl px-12 ring-2 ring-inset ring-cta md:hidden">

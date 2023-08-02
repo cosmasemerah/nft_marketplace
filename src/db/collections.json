@@ -1,0 +1,15 @@
+[
+  { "id": 1, "name": "DSGN Animals", "artist": "Mr Fox", "total": 1025 },
+  {
+    "id": 2,
+    "name": "Magic Mushrooms",
+    "artist": "Shroomie",
+    "total": 1000
+  },
+  {
+    "id": 3,
+    "name": "Disco Machines",
+    "artist": "BeKind2Robots",
+    "total": 1025
+  }
+]

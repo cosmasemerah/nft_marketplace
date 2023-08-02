@@ -1,17 +1,22 @@
-import cr01 from '../../assets/cr01.svg';
-import cr02 from '../../assets/cr02.svg';
-import cr03 from '../../assets/cr03.svg';
-import cr04 from '../../assets/cr04.svg';
-import cr05 from '../../assets/cr05.svg';
-import cr06 from '../../assets/cr06.svg';
-import cr07 from '../../assets/cr07.svg';
-import cr08 from '../../assets/cr08.svg';
-import cr09 from '../../assets/cr09.svg';
-import cr10 from '../../assets/cr10.svg';
-import cr11 from '../../assets/cr11.svg';
-import cr12 from '../../assets/cr12.svg';
-import rocket from '../../assets/RocketLaunch02.svg';
-import Button from '../../components/Button';
+import cr01 from '@assets/cr01.svg';
+import cr02 from '@assets/cr02.svg';
+import cr03 from '@assets/cr03.svg';
+import cr04 from '@assets/cr04.svg';
+import cr05 from '@assets/cr05.svg';
+import cr06 from '@assets/cr06.svg';
+import cr07 from '@assets/cr07.svg';
+import cr08 from '@assets/cr08.svg';
+import cr09 from '@assets/cr09.svg';
+import cr10 from '@assets/cr10.svg';
+import cr11 from '@assets/cr11.svg';
+import cr12 from '@assets/cr12.svg';
+import rocket from '@assets/RocketLaunch02.svg';
+import Button from '@components/Button';
+
+import db from '@db/creators.json';
+import { top10Creators as images } from '../../utils/imageData';
+
+const top12CreatorsData = db.slice(0, 12);
 
 const TopCreators = () => {
   return (
@@ -34,8 +39,34 @@ const TopCreators = () => {
           </Button>
         </div>
 
-        <div className="flex w-full flex-wrap gap-5 md:gap-[30px]">
-          <div className="relative grow rounded-2xl bg-secondary p-5">
+        <div className="flex w-full flex-wrap gap-5 md:gap-7">
+          {top12CreatorsData.map((item) => (
+            <div
+              className="relative grow rounded-2xl bg-secondary p-5"
+              key={item.id}
+            >
+              <p className="absolute left-[12px] top-[13px] flex h-7 w-7 items-center justify-center rounded-full bg-primary">
+                {item.id}
+              </p>
+              <div className="flex items-center gap-5 lg:flex-col">
+                <img
+                  src={images[`cr${item.id}`]}
+                  className="h-14 w-14 rounded-full"
+                  alt=""
+                />
+                <div className="flex flex-col gap-[5px] lg:items-center">
+                  <h3 className="text-2xl font-semibold">{item.name}</h3>
+                  <p className="text-caption">
+                    Total Sales:{' '}
+                    <span className="font-space text-white">
+                      {item.volume} ETH
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+          {/* <div className="relative grow rounded-2xl bg-secondary p-5">
             <div className="flex items-center gap-5 lg:flex-col">
               <img src={cr01} className="h-14 w-14 rounded-full" alt="" />
               <div className="flex flex-col gap-[5px] lg:items-center">
@@ -225,7 +256,7 @@ const TopCreators = () => {
                 6
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <Button className="h-14 w-full rounded-3xl px-12 ring-2 ring-inset ring-cta md:hidden">

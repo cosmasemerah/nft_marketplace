@@ -1,29 +1,34 @@
 import logo from '../assets/Logo.svg';
 import burgerMenu from '../assets/BurgerMenu.svg';
-import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="self-stretch px-7 py-3.5 md:px-12 md:py-4 lg:py-5">
       <div className="flex w-full items-center justify-between">
-        <img src={logo} className="h-6 w-auto" alt="logo" />
+        <Link to="/">
+          <img src={logo} className="h-6 w-auto lg:h-8" alt="logo" />
+        </Link>
 
         <div className="lg:hidden">
           <img src={burgerMenu} alt="menu button" />
         </div>
 
         <div className="hidden items-center gap-2.5 lg:flex">
-          <a href="#" className="px-5 font-semibold">
+          <Link to="marketplace" className="animation px-5 font-semibold">
             Marketplace
-          </a>
-          <a href="#" className="px-5 font-semibold">
+          </Link>
+          <Link to="rankings" className="animation px-5 font-semibold">
             Rankings
-          </a>
-          <a href="#" className="px-5 font-semibold">
+          </Link>
+          <a href="#" className="animation px-5 font-semibold">
             Connect Wallet
           </a>
 
-          <Button className="h-14 rounded-3xl bg-cta px-12 font-semibold">
+          <Link
+            to="signup"
+            className="animation flex h-14 justify-center rounded-3xl bg-cta px-12 font-semibold active:translate-y-1"
+          >
             <span className="flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +46,7 @@ const Navbar = () => {
               </svg>
               Sign Up
             </span>
-          </Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
-import Button from '../../components/Button';
-import rocket from '../../assets/RocketLaunch.svg';
-import HighlightedNFT from '../../components/HighlightedNFT';
+import rocket from '@assets/RocketLaunch.svg';
+import HighlightedNFT from './HeroHighlightedNFT';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -21,35 +21,42 @@ const HeroSection = () => {
             <HighlightedNFT />
           </div>
 
-          <Button className="h-14 self-stretch rounded-3xl bg-cta px-12 font-semibold md:self-start">
+          <Link
+            to="signup"
+            className="animation flex h-14 justify-center self-stretch rounded-3xl bg-cta px-12 font-semibold active:translate-y-1 md:self-start"
+          >
             <span className="flex items-center justify-center">
               <img src={rocket} className="mr-3" />
               Get Started
             </span>
-          </Button>
+          </Link>
 
           <div className="flex items-center gap-7 self-stretch">
-            <div className="flex flex-1 justify-center">
-              <h3 className="font-space text-2xl font-bold">
+            <div className="flex-1">
+              <h3 className="font-space text-2xl font-bold lg:text-3xl">
                 240k+
                 <br />{' '}
-                <span className="font-work text-base font-normal">
+                <span className="font-work text-base font-normal lg:text-2xl">
                   Total Sale
                 </span>
               </h3>
             </div>
-            <div className="flex flex-1 justify-center">
-              <h3 className="font-space text-2xl font-bold">
+            <div className="flex-1">
+              <h3 className="font-space text-2xl font-bold lg:text-3xl">
                 100k+
                 <br />{' '}
-                <span className="font-work text-base font-normal">Auction</span>
+                <span className="font-work text-base font-normal lg:text-2xl">
+                  Auction
+                </span>
               </h3>
             </div>
-            <div className="flex flex-1 justify-center">
-              <h3 className="font-space text-2xl font-bold">
+            <div className="flex-1">
+              <h3 className="font-space text-2xl font-bold lg:text-3xl">
                 240k+
                 <br />{' '}
-                <span className="font-work text-base font-normal">Artists</span>
+                <span className="font-work text-base font-normal lg:text-2xl">
+                  Artists
+                </span>
               </h3>
             </div>
           </div>
