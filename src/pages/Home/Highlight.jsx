@@ -5,6 +5,7 @@ import AuctionTimer from '@components/AuctionTimer';
 
 import db from '@db/highlight.json';
 import { highlightImgData as images } from '../../utils/imageData';
+import { Link } from 'react-router-dom';
 
 const Highlight = () => {
   return (
@@ -32,12 +33,17 @@ const Highlight = () => {
               <AuctionTimer />
             </div>
 
-            <Button className="h-[60px] w-full rounded-3xl bg-white px-12 font-semibold text-primary md:w-fit">
-              <span className="flex items-center justify-center">
-                <img src={Eye} className="mr-3" />
-                See NFT
-              </span>
-            </Button>
+            <Link
+              to="nft"
+              className="animation cursor-pointer active:translate-y-1"
+            >
+              <Button className="h-[60px] w-full rounded-3xl bg-white px-12 font-semibold text-primary md:w-fit">
+                <span className="flex items-center justify-center">
+                  <img src={Eye} className="mr-3" />
+                  See NFT
+                </span>
+              </Button>
+            </Link>
           </div>
           <div className="hidden md:block">
             <AuctionTimer />

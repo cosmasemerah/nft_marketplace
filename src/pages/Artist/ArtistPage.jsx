@@ -5,12 +5,10 @@ import discord from '@assets/DiscordLogo.svg';
 import youtube from '@assets/YoutubeLogo.svg';
 import twitter from '@assets/TwitterLogo.svg';
 import instagram from '@assets/InstagramLogo.svg';
-import dis01 from '@assets/dis1.svg';
-import disA01 from '@assets/disA1.svg';
-import dis02 from '@assets/dis2.svg';
-import disA02 from '@assets/disA2.svg';
-import dis03 from '@assets/dis3.svg';
-import disA03 from '@assets/disA3.svg';
+
+import db from '@db/discover.json';
+import { discoverMoreNftImgData as images } from '../../utils/imageData';
+import { Link } from 'react-router-dom';
 
 const ArtistPage = () => {
   return (
@@ -40,7 +38,7 @@ const ArtistPage = () => {
               Animakid
             </h1>
             <div className="flex flex-col gap-5 md:flex-row">
-              <div className="flex items-center justify-center gap-3 rounded-3xl bg-cta p-5">
+              <div className="animation flex cursor-pointer items-center justify-center gap-3 rounded-3xl bg-cta p-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -64,7 +62,7 @@ const ArtistPage = () => {
                 0xc0E3...B79C
               </div>
 
-              <div className="flex items-center justify-center gap-3 rounded-3xl border-2 border-cta p-5">
+              <div className="animation flex cursor-pointer items-center justify-center gap-3 rounded-3xl border-2 border-cta p-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -130,27 +128,27 @@ const ArtistPage = () => {
             <div className="flex gap-2.5">
               <img
                 src={globe}
-                className="h-6 w-6 lg:h-8 lg:w-8"
+                className="animation h-6 w-6 cursor-pointer lg:h-8 lg:w-8"
                 alt="website"
               />
               <img
                 src={discord}
-                className="h-6 w-6 lg:h-8 lg:w-8"
+                className="animation h-6 w-6 cursor-pointer lg:h-8 lg:w-8"
                 alt="discord"
               />
               <img
                 src={youtube}
-                className="h-6 w-6 lg:h-8 lg:w-8"
+                className="animation h-6 w-6 cursor-pointer lg:h-8 lg:w-8"
                 alt="youtube"
               />
               <img
                 src={twitter}
-                className="h-6 w-6 lg:h-8 lg:w-8"
+                className="animation h-6 w-6 cursor-pointer lg:h-8 lg:w-8"
                 alt="twitter"
               />
               <img
                 src={instagram}
-                className="h-6 w-6 lg:h-8 lg:w-8"
+                className="animation h-6 w-6 cursor-pointer lg:h-8 lg:w-8"
                 alt="instagram"
               />
             </div>
@@ -183,75 +181,43 @@ const ArtistPage = () => {
 
       <div className="flex justify-center self-stretch border-b-4 border-primary bg-secondary py-20">
         <div className="flex w-xs flex-wrap items-center justify-center gap-5 md:w-2xl lg:w-5xl">
-          <div className="flex flex-col justify-center rounded-2xl">
-            <img
-              src={dis01}
-              className="h-auto max-w-full rounded-t-2xl"
-              alt=""
-            />
-            <div className="rounded-b-3xl bg-primary p-5 pb-[25px]">
-              <h3 className="mb-[5px] text-2xl font-semibold">
-                Distant Galaxy
-              </h3>
-              <div className="mb-[25px] flex items-center">
-                <img src={disA01} className="rounded-full" alt="artist" />
-                <p className="ml-3">MoonDancer</p>
+          {db.map((item) => (
+            <Link to="nft" className="animation cursor-pointer " key={item.id}>
+              <div
+                className="flex flex-col justify-center rounded-2xl"
+                key={item.id}
+              >
+                <img
+                  src={images[`dis${item.id}`]}
+                  className="h-auto max-w-full rounded-t-2xl"
+                  alt=""
+                />
+                <div className="rounded-b-3xl bg-primary p-5 pb-[25px]">
+                  <h3 className="mb-[5px] text-2xl font-semibold">
+                    {item.name}
+                  </h3>
+                  <div className="mb-[25px] flex items-center">
+                    <img
+                      src={images[`disA${item.id}`]}
+                      className="rounded-full"
+                      alt="artist"
+                    />
+                    <p className="ml-3">{item.artist}</p>
+                  </div>
+                  <div className="flex justify-between font-space">
+                    <p>
+                      <span className="text-caption">Price</span> <br />{' '}
+                      {item.price} ETH
+                    </p>
+                    <p>
+                      <span className="text-caption">Highest Bid</span> <br />{' '}
+                      {item.highestBid} wETH
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="flex justify-between font-space">
-                <p>
-                  <span className="text-caption">Price</span> <br /> 1.63 ETH
-                </p>
-                <p>
-                  <span className="text-caption">Highest Bid</span> <br /> 0.33
-                  wETH
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center rounded-2xl bg-secondary">
-            <img
-              src={dis02}
-              className="h-auto max-w-full rounded-t-2xl"
-              alt=""
-            />
-            <div className="rounded-b-3xl bg-primary p-5 pb-[25px]">
-              <h3 className="mb-[5px] text-2xl font-semibold">Life On Edena</h3>
-              <div className="mb-[25px] flex items-center">
-                <img src={disA02} className="rounded-full" alt="artist" />
-                <p className="ml-3">Nebulakid</p>
-              </div>
-              <div className="flex justify-between font-space">
-                <p>
-                  <span className="text-caption">Price</span> <br /> 1.63 ETH
-                </p>
-                <p>
-                  <span className="text-caption">Highest Bid</span> <br /> 0.33
-                  wETH
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center rounded-2xl bg-secondary md:hidden  lg:flex">
-            <img src={dis03} className="rounded-t-2xl" alt="" />
-            <div className="rounded-b-3xl bg-primary p-5 pb-[25px]">
-              <h3 className="mb-[5px] text-2xl font-semibold">AstroFiction</h3>
-              <div className="mb-[25px] flex items-center">
-                <img src={disA03} className="rounded-full" alt="artist" />
-                <p className="ml-3">Spaceone</p>
-              </div>
-              <div className="flex justify-between font-space">
-                <p>
-                  <span className="text-caption">Price</span> <br /> 1.63 ETH
-                </p>
-                <p>
-                  <span className="text-caption">Highest Bid</span> <br /> 0.33
-                  wETH
-                </p>
-              </div>
-            </div>
-          </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

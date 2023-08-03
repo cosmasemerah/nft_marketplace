@@ -4,7 +4,7 @@ import earningIcon from '@assets/earning_ico.svg';
 
 const HowItWorks = () => {
   return (
-    <div className="flex justify-center self-stretch px-7 py-10 md:px-18">
+    <div className="flex justify-center self-stretch px-7 py-10 md:px-18 lg:py-20">
       <div className="flex w-xs flex-col gap-y-10 md:w-2xl lg:w-5xl lg:gap-y-14">
         <div>
           <h2 className="mb-2.5 text-3xl lg:text-4xl">How It Works</h2>
@@ -14,41 +14,51 @@ const HowItWorks = () => {
         </div>
 
         <div className="flex flex-col gap-y-5 md:flex-row  md:gap-x-7 md:gap-y-0 md:text-center">
-          <div className="flex flex-1 items-center gap-x-5 gap-y-5 rounded-3xl bg-secondary p-5 md:flex-col md:gap-x-0 md:pb-7 md:pt-2.5">
+          <div className="flex flex-1 items-center gap-x-5 gap-y-5 rounded-3xl bg-secondary p-5 md:flex-col md:gap-x-0 md:pb-7 md:pt-2.5 lg:px-7">
             <img
               src={collectionIcon}
-              className="h-24 w-24"
+              className="h-24 w-24 lg:h-[15.625rem] lg:w-[15.625rem]"
               alt="Create Collection"
             />
             <div className="flex flex-col gap-y-2.5">
-              <h3 className="text-base font-semibold">Create Collection</h3>
-              <p className="text-xs">
+              <h3 className="text-base font-semibold lg:text-2xl">
+                Create Collection
+              </h3>
+              <p className="text-xs lg:text-base">
                 Upload your work and setup your collection. Add a description,
                 social links and floor price.
               </p>
             </div>
           </div>
 
-          <div className="flex flex-1 items-center gap-x-5 gap-y-5 rounded-3xl bg-secondary p-5 md:flex-col md:gap-x-0 md:pb-7 md:pt-2.5">
-            <img src={earningIcon} className="h-24 w-24" alt="Start Earning" />
+          <div className="flex flex-1 items-center gap-x-5 gap-y-5 rounded-3xl bg-secondary p-5 md:flex-col md:gap-x-0 md:pb-7 md:pt-2.5 lg:px-7">
+            <img
+              src={earningIcon}
+              className="h-24 w-24 lg:h-[15.625rem] lg:w-[15.625rem]"
+              alt="Start Earning"
+            />
             <div className="flex flex-col gap-y-2.5">
-              <h3 className="text-base font-semibold">Start Earning</h3>
-              <p className="text-xs">
+              <h3 className="text-base font-semibold lg:text-2xl">
+                Start Earning
+              </h3>
+              <p className="text-xs lg:text-base">
                 Choose between auctions and fixed-price listings. Start earning
                 by selling your NFTs or trading others.
               </p>
             </div>
           </div>
 
-          <div className="flex flex-1 items-center gap-x-5 gap-y-5 rounded-3xl bg-secondary p-5 md:flex-col md:gap-x-0 md:pb-7 md:pt-2.5">
+          <div className="flex flex-1 items-center gap-x-5 gap-y-5 rounded-3xl bg-secondary p-5 md:flex-col md:gap-x-0 md:pb-7 md:pt-2.5 lg:px-7">
             <img
               src={walletIcon}
-              className="h-24 w-24"
+              className="h-24 w-24 lg:h-[15.625rem] lg:w-[15.625rem]"
               alt="setup your wallet"
             />
             <div className="flex flex-col gap-y-2.5">
-              <h3 className="text-base font-semibold">Setup Your Wallet</h3>
-              <p className="text-xs">
+              <h3 className="text-base font-semibold lg:text-2xl">
+                Setup Your Wallet
+              </h3>
+              <p className="text-xs lg:text-base">
                 Set up your wallet of choice. Connect it to the NFT market by
                 clicking the wallet icon in the top right corner.
               </p>

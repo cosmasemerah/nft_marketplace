@@ -36,7 +36,7 @@ export const top10Creators = Object.fromEntries(
 );
 
 //Discover more data
-export const discoverMoreImgData = {
+export const discoverMoreNftImgData = {
   dis1: (await import('@assets/dis1.svg')).default,
   disA1: (await import('@assets/disA1.svg')).default,
   dis2: (await import('@assets/dis2.svg')).default,
@@ -58,8 +58,8 @@ export const discoverMoreImgData = {
 };
 
 //Discover new trending data
-export const topDiscoverImgData = Object.fromEntries(
-  Object.entries(discoverMoreImgData).slice(0, 6)
+export const topDiscoverNftImgData = Object.fromEntries(
+  Object.entries(discoverMoreNftImgData).slice(0, 6)
 );
 
 //Highlight NFT

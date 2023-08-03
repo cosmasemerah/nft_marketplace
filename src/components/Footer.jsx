@@ -6,6 +6,7 @@ import instagram from '../assets/InstagramLogo.svg';
 
 import SubscribeForm from './SubscribeWidget';
 import SubscribeTablet from './SubscribeForm';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,17 +14,24 @@ const Footer = () => {
       <div className="flex w-xs flex-col gap-10 divide-y md:w-2xl lg:w-5xl">
         <div className="flex max-w-[98%] flex-col justify-between gap-y-7 lg:flex-row lg:gap-x-10 lg:self-center">
           <div className="space-y-5">
-            <img src={logo} alt="logo" />
+            <Link to="/" className="cursor-pointer">
+              <img src={logo} alt="logo" />
+            </Link>
+
             <p className="text-mute">
               NFT marketplace UI designed by Anima built by Cosmas.
             </p>
             <div>
               <p className="mb-3.5 text-mute">Join our community</p>
               <div className="flex gap-2.5">
-                <img src={discord} alt="discord" />
-                <img src={youtube} alt="youtube" />
-                <img src={twitter} alt="twitter" />
-                <img src={instagram} alt="instagram" />
+                <img src={discord} alt="discord" className="cursor-pointer" />
+                <img src={youtube} alt="youtube" className="cursor-pointer" />
+                <img src={twitter} alt="twitter" className="cursor-pointer" />
+                <img
+                  src={instagram}
+                  alt="instagram"
+                  className="cursor-pointer"
+                />
               </div>
             </div>
           </div>

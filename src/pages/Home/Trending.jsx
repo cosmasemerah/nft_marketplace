@@ -1,5 +1,6 @@
 import db from '@db/collections.json';
 import { trendingImgData as images } from '../../utils/imageData';
+import { Link } from 'react-router-dom';
 
 const TrendingCollections = () => {
   return (
@@ -14,7 +15,7 @@ const TrendingCollections = () => {
           </p>
         </div>
 
-        <div className="flex justify-start gap-x-7 hover:scale-125">
+        <div className="flex justify-start gap-x-7">
           {db.map((item, index) => (
             <div
               key={item.id}
@@ -26,25 +27,34 @@ const TrendingCollections = () => {
                   : ''
               }`}
             >
-              <img
-                src={images[`tre${item.id}0`]}
-                alt=""
-                className="mb-[15px] rounded-xl"
-              />
+              <Link to="nft" className="animation cursor-pointer">
+                <img
+                  src={images[`tre${item.id}0`]}
+                  alt=""
+                  className="mb-[15px] rounded-xl"
+                />
+              </Link>
+
               <div className="mb-[15px] flex items-center justify-between">
-                <img
-                  src={images[`tre${item.id}1`]}
-                  className="h-[95px] w-[95px] rounded-xl md:h-[100px] md:w-[100px]"
-                  alt=""
-                />
-                <img
-                  src={images[`tre${item.id}2`]}
-                  className="h-[95px] w-[95px] rounded-xl md:h-[100px] md:w-[100px]"
-                  alt=""
-                />
-                <h4 className="flex h-[95px] w-[95px] justify-center rounded-xl bg-cta px-[15px] py-8 md:h-[100px] md:w-[100px]">
-                  {item.total}+
-                </h4>
+                <Link to="nft" className="animation cursor-pointer">
+                  <img
+                    src={images[`tre${item.id}1`]}
+                    className="h-[95px] w-[95px] rounded-xl md:h-[100px] md:w-[100px]"
+                    alt=""
+                  />
+                </Link>
+                <Link to="nft" className="animation cursor-pointer">
+                  <img
+                    src={images[`tre${item.id}2`]}
+                    className="h-[95px] w-[95px] rounded-xl md:h-[100px] md:w-[100px]"
+                    alt=""
+                  />
+                </Link>
+                <Link to="nft" className="animation cursor-pointer">
+                  <h4 className="flex h-[95px] w-[95px] justify-center rounded-xl bg-cta px-[15px] py-8 md:h-[100px] md:w-[100px]">
+                    {item.total}+
+                  </h4>
+                </Link>
               </div>
               <div>
                 <h3 className="text-2xl font-semibold">{item.name}</h3>

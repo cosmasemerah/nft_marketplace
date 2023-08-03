@@ -6,15 +6,15 @@ const SubscribeForm = () => {
       <label className="sr-only" htmlFor="Subscribe">
         Subscribe
       </label>
-      <div className="relative flex max-w-[420px] justify-center">
+      <div className="relative flex max-w-[420px] justify-center overflow-hidden">
         <input
-          className="h-[46px] w-full rounded-3xl px-5 text-primary"
+          className="w-full rounded-3xl px-5 py-4 text-primary outline-0"
           id="Subscribe"
           type="email"
           placeholder="Enter Your Email Address"
         />
         <Button
-          className="absolute right-0 h-[46px] rounded-3xl bg-cta px-12"
+          className="absolute inset-y-0 right-0 cursor-pointer rounded-3xl bg-cta px-12 py-4 transition-all duration-300 hover:scale-105 active:scale-100"
           type="submit"
           disabled
         >

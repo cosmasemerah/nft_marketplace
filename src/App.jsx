@@ -7,6 +7,7 @@ import ArtistPage from './pages/Artist/ArtistPage';
 import NftPage from './pages/Nft/NftPage';
 import Marketplace from './pages/Marketplace/Marketplace';
 import RankingsPage from './pages/Rankings/RankingsPage';
+import ConnectWalletPage from './pages/ConnectWallet/ConnectWalletPage';
 import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: 'signup', element: <SignUpPage /> },
       { path: 'artist', element: <ArtistPage /> },
       { path: 'nft', element: <NftPage /> },
+      { path: 'connectwallet', element: <ConnectWalletPage /> },
       { path: 'marketplace', element: <Marketplace /> },
       { path: 'rankings', element: <RankingsPage /> },
     ],

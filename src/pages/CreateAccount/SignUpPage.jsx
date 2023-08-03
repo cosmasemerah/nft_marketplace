@@ -5,10 +5,10 @@ import Button from '../../components/Button';
 const SignUpPage = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-7 self-stretch md:flex-row md:gap-10 lg:gap-14">
-      <div className="w-full flex-1">
+      <div className="w-full flex-1 overflow-hidden">
         <img
           src={acct3}
-          className="h-[232px] w-full object-cover object-center md:h-[615px] lg:h-[691px]"
+          className="h-[232px] w-full object-cover object-center transition-all delay-75 duration-2000 ease-in-out md:h-[615px] md:hover:scale-125 lg:h-[691px]"
         />
       </div>
 
@@ -48,7 +48,7 @@ const SignUpPage = () => {
               <input
                 type="text"
                 id="Username"
-                className="h-[46px] w-full rounded-3xl pl-10 text-primary placeholder:text-primary"
+                className="h-[46px] w-full rounded-3xl pl-10 text-primary outline-0 placeholder:text-primary"
                 placeholder="Username"
               />
             </div>
@@ -76,7 +76,7 @@ const SignUpPage = () => {
               <input
                 type="email"
                 id="email"
-                className="h-[46px] w-full rounded-3xl pl-10 text-primary placeholder:text-primary"
+                className="h-[46px] w-full rounded-3xl pl-10 text-primary outline-0 placeholder:text-primary"
                 placeholder="Email Address"
               />
             </div>
@@ -104,7 +104,7 @@ const SignUpPage = () => {
               <input
                 type="password"
                 id="password"
-                className="h-[46px] w-full rounded-3xl pl-10 text-primary placeholder:text-primary"
+                className="h-[46px] w-full rounded-3xl pl-10 text-primary outline-0 placeholder:text-primary"
                 placeholder="Password"
               />
             </div>
@@ -132,14 +132,14 @@ const SignUpPage = () => {
               <input
                 type="password"
                 id="comfirmPassword"
-                className="h-[46px] w-full rounded-3xl pl-10 text-primary placeholder:text-primary"
+                className="h-[46px] w-full rounded-3xl pl-10 text-primary outline-0 placeholder:text-primary"
                 placeholder="Comfirm Password"
               />
             </div>
           </div>
 
           <Button
-            className="h-[46px] rounded-3xl bg-cta px-12"
+            className="animation h-[46px] cursor-pointer rounded-3xl bg-cta px-12"
             type="submit"
             disabled
           >

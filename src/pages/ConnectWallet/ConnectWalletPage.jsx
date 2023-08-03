@@ -4,10 +4,10 @@ const ConnectWalletPage = () => {
   const newLocal = 'round';
   return (
     <div className="flex flex-col items-center justify-center gap-7 self-stretch md:flex-row md:gap-10 lg:gap-14">
-      <div className="w-full flex-1">
+      <div className="w-full flex-1 overflow-hidden">
         <img
           src={connImg}
-          className="h-[232px] w-full object-cover object-center md:h-[615px] lg:h-[691px]"
+          className="h-[232px] w-full object-cover object-center transition-all delay-75 duration-2000 ease-in-out md:h-[615px] md:hover:scale-125 lg:h-[691px]"
         />
       </div>
 
@@ -26,7 +26,7 @@ const ConnectWalletPage = () => {
           <div className="flex flex-col gap-[15px]">
             <a
               href="#"
-              className="flex items-center justify-start gap-5 rounded-3xl border border-cta p-4"
+              className="animation flex items-center justify-start gap-5 rounded-3xl border border-cta p-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@ const ConnectWalletPage = () => {
             {/* Wallet Connect */}
             <a
               href="#"
-              className="flex items-center justify-start gap-5 rounded-3xl border border-cta p-4"
+              className="animation flex items-center justify-start gap-5 rounded-3xl border border-cta p-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -316,7 +316,7 @@ const ConnectWalletPage = () => {
             {/* Coinbase */}
             <a
               href="#"
-              className="flex items-center justify-start gap-5 rounded-3xl border border-cta p-4"
+              className="animation flex items-center justify-start gap-5 rounded-3xl border border-cta p-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

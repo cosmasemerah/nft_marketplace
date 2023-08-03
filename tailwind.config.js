@@ -95,6 +95,9 @@ export default {
       borderRadius: {
         '3xl': '1.25rem',
       },
+      transitionDuration: {
+        2000: '2000ms',
+      },
     },
   },
   plugins: [],

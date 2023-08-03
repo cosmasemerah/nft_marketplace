@@ -21,9 +21,9 @@ const Navbar = () => {
           <Link to="rankings" className="animation px-5 font-semibold">
             Rankings
           </Link>
-          <a href="#" className="animation px-5 font-semibold">
+          <Link to="connectwallet" className="animation px-5 font-semibold">
             Connect Wallet
-          </a>
+          </Link>
 
           <Link
             to="signup"
