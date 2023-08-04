@@ -11,6 +11,7 @@ const SearchInput = () => {
           placeholder="Search your favorie NFTs"
           type="text"
           name="search"
+          disabled
         />
         <span className="absolute inset-y-0 right-0 flex items-center pr-5">
           <svg

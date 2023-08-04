@@ -36,8 +36,14 @@ const Discover = () => {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-5">
-          {topDiscoverData.map((item) => (
-            <Link to="nft" className="animation cursor-pointer " key={item.id}>
+          {topDiscoverData.map((item, index) => (
+            <Link
+              to="nft"
+              className={`animation cursor-pointer ${
+                index === 2 ? 'md:hidden lg:flex' : ''
+              }`}
+              key={item.id}
+            >
               <div className="flex flex-col justify-center rounded-2xl bg-secondary">
                 <img
                   src={images[`dis${item.id}`]}

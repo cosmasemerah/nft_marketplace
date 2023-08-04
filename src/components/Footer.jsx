@@ -38,15 +38,15 @@ const Footer = () => {
 
           <div className="flex shrink-0 flex-col justify-start space-y-5">
             <h3 className="font-space text-2xl font-bold">Explore</h3>
-            <a href="#" className="text-mute">
+            <Link to="marketplace" className="text-mute">
               Marketplace
-            </a>
-            <a href="#" className="text-mute">
+            </Link>
+            <Link to="rankings" className="text-mute">
               Rankings
-            </a>
-            <a href="#" className="text-mute">
+            </Link>
+            <Link to="connectwallet" className="text-mute">
               Connect a wallet
-            </a>
+            </Link>
           </div>
 
           <div className="flex flex-col justify-start space-y-5">

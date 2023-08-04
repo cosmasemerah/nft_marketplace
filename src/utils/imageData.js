@@ -28,10 +28,18 @@ export const topCreatorsImgData = {
   cr10: (await import('@assets/cr10.svg')).default,
   cr11: (await import('@assets/cr11.svg')).default,
   cr12: (await import('@assets/cr12.svg')).default,
+  cr13: (await import('@assets/cr13.svg')).default,
+  cr14: (await import('@assets/cr14.svg')).default,
+  cr15: (await import('@assets/cr15.svg')).default,
+  cr16: (await import('@assets/cr16.svg')).default,
+  cr17: (await import('@assets/cr17.svg')).default,
+  cr18: (await import('@assets/cr18.svg')).default,
+  cr19: (await import('@assets/cr19.svg')).default,
+  cr20: (await import('@assets/cr20.svg')).default,
 };
 
-//Top 10 Creators Data
-export const top10Creators = Object.fromEntries(
+//Top 12 Creators Data
+export const top12Creators = Object.fromEntries(
   Object.entries(topCreatorsImgData).slice(0, 12)
 );
 
@@ -66,4 +74,46 @@ export const topDiscoverNftImgData = Object.fromEntries(
 export const highlightImgData = {
   hiArtist: (await import('@assets/disA4.svg')).default,
   hiBg: await import('@assets/highlightBg.svg'),
+};
+
+//More from Artist
+export const artistNftImgData = {
+  nft1: (await import('@assets/nft1.svg')).default,
+  nft2: (await import('@assets/nft2.svg')).default,
+  nft3: (await import('@assets/nft3.svg')).default,
+  nft4: (await import('@assets/nft4.svg')).default,
+  nft5: (await import('@assets/nft5.svg')).default,
+  nft6: (await import('@assets/nft6.svg')).default,
+  nft7: (await import('@assets/nft7.svg')).default,
+  nft8: (await import('@assets/nft8.svg')).default,
+  nft9: (await import('@assets/nft9.svg')).default,
+  nftA: (await import('@assets/nftA.svg')).default,
+};
+
+//Marketplace NFT
+export const marketImgData = {
+  ma1: (await import('@assets/ma1.svg')).default,
+  maA1: (await import('@assets/nftA.svg')).default,
+  ma2: (await import('@assets/ma2.svg')).default,
+  maA2: (await import('@assets/nftA.svg')).default,
+  ma3: (await import('@assets/ma3.svg')).default,
+  maA3: (await import('@assets/nftA.svg')).default,
+  ma4: (await import('@assets/ma4.svg')).default,
+  maA4: (await import('@assets/nftA.svg')).default,
+  ma5: (await import('@assets/ma5.svg')).default,
+  maA5: (await import('@assets/nftA.svg')).default,
+  ma6: (await import('@assets/ma6.svg')).default,
+  maA6: (await import('@assets/nftA.svg')).default,
+  ma7: (await import('@assets/ma7.svg')).default,
+  maA7: (await import('@assets/nftA.svg')).default,
+  ma8: (await import('@assets/ma8.svg')).default,
+  maA8: (await import('@assets/nftA.svg')).default,
+  ma9: (await import('@assets/ma9.svg')).default,
+  maA9: (await import('@assets/nftA.svg')).default,
+  ma10: (await import('@assets/ma10.svg')).default,
+  maA10: (await import('@assets/nftA.svg')).default,
+  ma11: (await import('@assets/ma11.svg')).default,
+  maA11: (await import('@assets/nftA.svg')).default,
+  ma12: (await import('@assets/ma12.svg')).default,
+  maA12: (await import('@assets/nftA.svg')).default,
 };

@@ -1,10 +1,6 @@
-import SearchInput from '../../components/SearchInput';
-import dis01 from '../../assets/dis1.svg';
-import disA01 from '../../assets/disA1.svg';
-import dis02 from '../../assets/dis2.svg';
-import disA02 from '../../assets/disA2.svg';
-import dis03 from '../../assets/dis3.svg';
-import disA03 from '../../assets/disA3.svg';
+import db from '@db/creators.json';
+import { topCreatorsImgData as images } from '../../utils/imageData';
+import { Link } from 'react-router-dom';
 
 const Marketplace = () => {
   return (
@@ -54,86 +50,36 @@ const Marketplace = () => {
           </div>
 
           <ul className="flex w-full flex-col gap-5">
-            <li>
-              <div className="flex justify-between rounded-3xl bg-secondary px-2.5 py-3 font-space text-xs text-white md:px-5 md:text-base">
-                <div className="flex items-center gap-2.5 md:w-[430px] md:gap-5">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full text-caption lg:h-7 lg:w-7 lg:bg-primary">
-                    1
+            {db.map((item) => (
+              <li key={item.id}>
+                <Link to="/artist">
+                  <div className="flex justify-between rounded-3xl bg-secondary px-2.5 py-3 font-space text-xs text-white md:px-5 md:text-base">
+                    <div className="flex items-center gap-2.5 md:w-[430px] md:gap-5">
+                      <div className="flex h-6 w-6 items-center justify-center rounded-full text-caption lg:h-7 lg:w-7 lg:bg-primary">
+                        {item.id}
+                      </div>
+                      <div className="animation flex items-center gap-3">
+                        <img
+                          src={images[`cr${item.id}`]}
+                          className="rounded-full lg:h-14 lg:w-14"
+                          alt="artist"
+                        />
+                        <p className="font-work md:text-2xl md:font-semibold">
+                          {item.name}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex w-[80px] items-center gap-5 md:w-[220px] lg:w-[520px]">
+                      <div className="hidden flex-1 text-green md:block">
+                        +{item.change}%
+                      </div>
+                      <div className="hidden flex-1 lg:block">{item.sold}</div>
+                      <div className="flex-1">{item.price} ETH</div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <img
-                      src={disA01}
-                      className="rounded-full lg:h-14 lg:w-14"
-                      alt="artist"
-                    />
-                    <p className="font-work md:text-2xl md:font-semibold">
-                      Jaydon Ekstrom Bothman
-                    </p>
-                  </div>
-                </div>
-                <div className="flex w-[80px] items-center gap-5 md:w-[220px] lg:w-[520px]">
-                  <div className="hidden flex-1 text-green md:block">
-                    +1.24%
-                  </div>
-                  <div className="hidden flex-1 lg:block">602</div>
-                  <div className="flex-1">12.4 ETH</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div className="flex justify-between rounded-3xl bg-secondary px-2.5 py-3 font-space text-xs text-white md:px-5 md:text-base">
-                <div className="flex items-center gap-2.5 md:w-[430px] md:gap-5">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full text-caption lg:h-7 lg:w-7 lg:bg-primary">
-                    1
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <img
-                      src={disA02}
-                      className="rounded-full lg:h-14 lg:w-14"
-                      alt="artist"
-                    />
-                    <p className="font-work md:text-2xl md:font-semibold">
-                      Jaydon Ekstrom Bothman
-                    </p>
-                  </div>
-                </div>
-                <div className="flex w-[80px] items-center gap-5 md:w-[220px] lg:w-[520px]">
-                  <div className="hidden flex-1 text-green md:block">
-                    +1.24%
-                  </div>
-                  <div className="hidden flex-1 lg:block">602</div>
-                  <div className="flex-1">12.4 ETH</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div className="flex justify-between rounded-3xl bg-secondary px-2.5 py-3 font-space text-xs text-white md:px-5 md:text-base">
-                <div className="flex items-center gap-2.5 md:w-[430px] md:gap-5">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full text-caption lg:h-7 lg:w-7 lg:bg-primary">
-                    1
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <img
-                      src={disA03}
-                      className="rounded-full lg:h-14 lg:w-14"
-                      alt="artist"
-                    />
-                    <p className="font-work md:text-2xl md:font-semibold">
-                      Jaydon Ekstrom Bothman
-                    </p>
-                  </div>
-                </div>
-                <div className="flex w-[80px] items-center gap-5 md:w-[220px] lg:w-[520px]">
-                  <div className="hidden flex-1 text-green md:block">
-                    +1.24%
-                  </div>
-                  <div className="hidden flex-1 lg:block">602</div>
-                  <div className="flex-1">12.4 ETH</div>
-                </div>
-              </div>
-            </li>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

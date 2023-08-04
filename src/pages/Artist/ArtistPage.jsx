@@ -181,8 +181,14 @@ const ArtistPage = () => {
 
       <div className="flex justify-center self-stretch border-b-4 border-primary bg-secondary py-20">
         <div className="flex w-xs flex-wrap items-center justify-center gap-5 md:w-2xl lg:w-5xl">
-          {db.map((item) => (
-            <Link to="nft" className="animation cursor-pointer " key={item.id}>
+          {db.map((item, index) => (
+            <Link
+              to="/nft"
+              className={`animation flex cursor-pointer ${
+                index >= 3 && index <= 5 ? 'hidden md:flex' : ''
+              } ${index >= 6 ? 'hidden lg:flex' : ''}`}
+              key={item.id}
+            >
               <div
                 className="flex flex-col justify-center rounded-2xl"
                 key={item.id}

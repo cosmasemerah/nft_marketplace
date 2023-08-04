@@ -3,7 +3,7 @@ import rocket from '@assets/RocketLaunch02.svg';
 import Button from '@components/Button';
 
 import db from '@db/creators.json';
-import { top10Creators as images } from '../../utils/imageData';
+import { top12Creators as images } from '../../utils/imageData';
 
 const top12CreatorsData = db.slice(0, 12);
 

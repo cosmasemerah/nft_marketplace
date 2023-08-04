@@ -2,13 +2,12 @@ import nftBg from '@assets/nftBg.svg';
 import hivatar from '@assets/cr09.svg';
 import globe from '@assets/Globe.svg';
 import AuctionTimer from '@components/AuctionTimer';
-import dis01 from '@assets/dis1.svg';
-import disA01 from '@assets/disA1.svg';
-import dis02 from '@assets/dis2.svg';
-import disA02 from '@assets/disA2.svg';
-import dis03 from '@assets/dis3.svg';
-import disA03 from '@assets/disA3.svg';
 import Button from '@components/Button';
+
+import db from '@db/artistCollections.json';
+import { artistNftImgData as images } from '../../utils/imageData';
+import { Link } from 'react-router-dom';
+
 const NftPage1 = () => {
   return (
     <div className="flex flex-col items-center self-stretch">
@@ -33,7 +32,7 @@ const NftPage1 = () => {
 
               <div className="self-stretch md:hidden">
                 <AuctionTimer>
-                  <Button className="h-14 self-stretch rounded-3xl bg-cta px-12 font-semibold md:self-start">
+                  <Button className="animation h-14 self-stretch rounded-3xl bg-cta px-12 font-semibold md:self-start">
                     Place Bid
                   </Button>
                 </AuctionTimer>
@@ -101,14 +100,18 @@ const NftPage1 = () => {
               <div className="flex flex-col items-start gap-2.5 leading-8">
                 <h3 className="font-space text-caption">Tags</h3>
                 <div className="flex flex-wrap items-center gap-3 uppercase">
-                  <p className="rounded-3xl bg-secondary px-7 py-3">
+                  <p className="animation rounded-3xl bg-secondary px-7 py-3">
                     Animation
                   </p>
-                  <p className="rounded-3xl bg-secondary px-7 py-3">Mars</p>
-                  <p className="rounded-3xl bg-secondary px-7 py-3">
+                  <p className="animation rounded-3xl bg-secondary px-7 py-3">
+                    Mars
+                  </p>
+                  <p className="animation rounded-3xl bg-secondary px-7 py-3">
                     Ilustration
                   </p>
-                  <p className="rounded-3xl bg-secondary px-7 py-3">Moon</p>
+                  <p className="animation rounded-3xl bg-secondary px-7 py-3">
+                    Moon
+                  </p>
                 </div>
               </div>
             </div>
@@ -116,7 +119,7 @@ const NftPage1 = () => {
 
           <div className="hidden flex-none md:block">
             <AuctionTimer>
-              <Button className="h-14 self-stretch rounded-3xl bg-cta px-12 font-semibold md:self-start">
+              <Button className="animation h-14 self-stretch rounded-3xl bg-cta px-12 font-semibold md:self-start">
                 Place Bid
               </Button>
             </AuctionTimer>
@@ -130,7 +133,82 @@ const NftPage1 = () => {
             More From this Artist
           </h2>
 
-          <Button className="hidden h-[60px] rounded-3xl px-12 ring-2 ring-inset ring-cta md:inline-block">
+          <Link to="artist" className="animation hidden md:inline-block">
+            <Button className="h-[60px] rounded-3xl px-12 ring-2 ring-inset ring-cta">
+              <span className="flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  className="mr-3"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M2.5 10C2.5 9.65482 2.77982 9.375 3.125 9.375H16.875C17.2202 9.375 17.5 9.65482 17.5 10C17.5 10.3452 17.2202 10.625 16.875 10.625H3.125C2.77982 10.625 2.5 10.3452 2.5 10Z"
+                    fill="#A259FF"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M10.8081 3.93306C11.0521 3.68898 11.4479 3.68898 11.6919 3.93306L17.3169 9.55806C17.561 9.80214 17.561 10.1979 17.3169 10.4419L11.6919 16.0669C11.4479 16.311 11.0521 16.311 10.8081 16.0669C10.564 15.8229 10.564 15.4271 10.8081 15.1831L15.9911 10L10.8081 4.81694C10.564 4.57286 10.564 4.17714 10.8081 3.93306Z"
+                    fill="#A259FF"
+                  />
+                </svg>
+                Go to Artist Page
+              </span>
+            </Button>
+          </Link>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-7 md:gap-x-7 md:gap-y-14">
+          {db.map((item, index) => (
+            <Link
+              key={item.id}
+              className={`animation flex cursor-pointer ${
+                index >= 2 && index <= 5 ? 'hidden md:flex' : ''
+              } ${index >= 6 ? 'hidden lg:flex' : ''}`}
+            >
+              <div
+                className={`flex flex-col justify-center rounded-2xl bg-secondary`}
+              >
+                <img
+                  src={images[`nft${item.id}`]}
+                  className="h-auto max-w-full rounded-t-2xl"
+                  alt=""
+                />
+                <div className="p-5 pb-[25px]">
+                  <h3 className="mb-[5px] text-2xl font-semibold">
+                    {item.name}
+                  </h3>
+                  <div className="mb-[25px] flex items-center">
+                    <img
+                      src={images['nftA']}
+                      className="rounded-full"
+                      alt="artist"
+                    />
+                    <p className="ml-3">MoonDancer</p>
+                  </div>
+                  <div className="flex justify-between font-space">
+                    <p>
+                      <span className="text-caption">Price</span> <br />{' '}
+                      {item.price} ETH
+                    </p>
+                    <p>
+                      <span className="text-caption">Highest Bid</span> <br />{' '}
+                      {item.highestBid} wETH
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <Link to="/artist" className="animation md:hidden">
+          <Button className="h-[60px] w-full rounded-3xl px-12 ring-2 ring-inset ring-cta">
             <span className="flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,106 +234,7 @@ const NftPage1 = () => {
               Go to Artist Page
             </span>
           </Button>
-        </div>
-
-        <div className="flex flex-wrap items-center justify-center gap-5">
-          <div className="flex flex-col justify-center rounded-2xl bg-secondary">
-            <img
-              src={dis01}
-              className="h-auto max-w-full rounded-t-2xl"
-              alt=""
-            />
-            <div className="p-5 pb-[25px]">
-              <h3 className="mb-[5px] text-2xl font-semibold">
-                Distant Galaxy
-              </h3>
-              <div className="mb-[25px] flex items-center">
-                <img src={disA01} className="rounded-full" alt="artist" />
-                <p className="ml-3">MoonDancer</p>
-              </div>
-              <div className="flex justify-between font-space">
-                <p>
-                  <span className="text-caption">Price</span> <br /> 1.63 ETH
-                </p>
-                <p>
-                  <span className="text-caption">Highest Bid</span> <br /> 0.33
-                  wETH
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center rounded-2xl bg-secondary">
-            <img
-              src={dis02}
-              className="h-auto max-w-full rounded-t-2xl"
-              alt=""
-            />
-            <div className="p-5 pb-[25px]">
-              <h3 className="mb-[5px] text-2xl font-semibold">Life On Edena</h3>
-              <div className="mb-[25px] flex items-center">
-                <img src={disA02} className="rounded-full" alt="artist" />
-                <p className="ml-3">Nebulakid</p>
-              </div>
-              <div className="flex justify-between font-space">
-                <p>
-                  <span className="text-caption">Price</span> <br /> 1.63 ETH
-                </p>
-                <p>
-                  <span className="text-caption">Highest Bid</span> <br /> 0.33
-                  wETH
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center rounded-2xl bg-secondary md:hidden  lg:flex">
-            <img src={dis03} className="rounded-t-2xl" alt="" />
-            <div className="p-5 pb-[25px]">
-              <h3 className="mb-[5px] text-2xl font-semibold">AstroFiction</h3>
-              <div className="mb-[25px] flex items-center">
-                <img src={disA03} className="rounded-full" alt="artist" />
-                <p className="ml-3">Spaceone</p>
-              </div>
-              <div className="flex justify-between font-space">
-                <p>
-                  <span className="text-caption">Price</span> <br /> 1.63 ETH
-                </p>
-                <p>
-                  <span className="text-caption">Highest Bid</span> <br /> 0.33
-                  wETH
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <Button className="h-[60px] w-full rounded-3xl px-12 ring-2 ring-inset ring-cta md:hidden">
-          <span className="flex items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              className="mr-3"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M2.5 10C2.5 9.65482 2.77982 9.375 3.125 9.375H16.875C17.2202 9.375 17.5 9.65482 17.5 10C17.5 10.3452 17.2202 10.625 16.875 10.625H3.125C2.77982 10.625 2.5 10.3452 2.5 10Z"
-                fill="#A259FF"
-              />
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M10.8081 3.93306C11.0521 3.68898 11.4479 3.68898 11.6919 3.93306L17.3169 9.55806C17.561 9.80214 17.561 10.1979 17.3169 10.4419L11.6919 16.0669C11.4479 16.311 11.0521 16.311 10.8081 16.0669C10.564 15.8229 10.564 15.4271 10.8081 15.1831L15.9911 10L10.8081 4.81694C10.564 4.57286 10.564 4.17714 10.8081 3.93306Z"
-                fill="#A259FF"
-              />
-            </svg>
-            Go to Artist Page
-          </span>
-        </Button>
+        </Link>
       </div>
     </div>
   );
