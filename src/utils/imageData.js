@@ -33,9 +33,9 @@ export const topCreatorsImgData = {
   cr15: (await import('@assets/cr15.svg')).default,
   cr16: (await import('@assets/cr16.svg')).default,
   cr17: (await import('@assets/cr17.svg')).default,
-  cr18: (await import('@assets/cr18.svg')).default,
-  cr19: (await import('@assets/cr19.svg')).default,
-  cr20: (await import('@assets/cr20.svg')).default,
+  cr18: (await import('@assets/cr08.svg')).default,
+  cr19: (await import('@assets/cr09.svg')).default,
+  cr20: (await import('@assets/cr10.svg')).default,
 };
 
 //Top 12 Creators Data
