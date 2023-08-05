@@ -61,7 +61,7 @@ const Marketplace = () => {
                       <div className="animation flex items-center gap-3">
                         <img
                           src={images[`cr${item.id}`]}
-                          className="rounded-full lg:h-14 lg:w-14"
+                          className="h-6 w-6 rounded-full md:h-7 md:w-7 lg:h-14 lg:w-14"
                           alt="artist"
                         />
                         <p className="font-work md:text-2xl md:font-semibold">
@@ -74,7 +74,7 @@ const Marketplace = () => {
                         +{item.change}%
                       </div>
                       <div className="hidden flex-1 lg:block">{item.sold}</div>
-                      <div className="flex-1">{item.price} ETH</div>
+                      <div className="flex-1">{item.volume} ETH</div>
                     </div>
                   </div>
                 </Link>

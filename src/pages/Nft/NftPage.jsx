@@ -175,7 +175,7 @@ const NftPage1 = () => {
                 className={`flex flex-col justify-center rounded-2xl bg-secondary`}
               >
                 <img
-                  src={images[`nft${item.id}`]}
+                  src={item.image}
                   className="h-auto max-w-full rounded-t-2xl"
                   alt=""
                 />
