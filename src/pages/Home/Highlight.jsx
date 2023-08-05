@@ -12,7 +12,7 @@ const Highlight = () => {
     <div
       className="flex justify-center gap-y-10 self-stretch bg-cover bg-center px-7 py-10  pb-10 pt-[120px]  md:px-[82px] md:pt-[360px] lg:pb-14"
       style={{
-        backgroundImage: `linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%), url(${images.hiBg.default})`,
+        backgroundImage: `linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%), url(${images.hiBg})`,
       }}
     >
       <div className="flex w-xs flex-col gap-y-10 md:w-2xl lg:w-5xl lg:gap-y-14">
