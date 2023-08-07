@@ -7,6 +7,7 @@ import Button from '@components/Button';
 import db from '@db/artistCollections.json';
 import { artistNftImgData as images } from '../../utils/imageData';
 import { Link } from 'react-router-dom';
+import NftCard from '@components/NftCard';
 
 const NftPage1 = () => {
   return (
@@ -171,38 +172,15 @@ const NftPage1 = () => {
                 index >= 2 && index <= 5 ? 'hidden md:flex' : ''
               } ${index >= 6 ? 'hidden lg:flex' : ''}`}
             >
-              <div
-                className={`flex flex-col justify-center rounded-2xl bg-secondary`}
-              >
-                <img
-                  src={item.image}
-                  className="h-auto max-w-full rounded-t-2xl"
-                  alt=""
-                />
-                <div className="p-5 pb-[25px]">
-                  <h3 className="mb-[5px] text-2xl font-semibold">
-                    {item.name}
-                  </h3>
-                  <div className="mb-[25px] flex items-center">
-                    <img
-                      src={images['nftA']}
-                      className="rounded-full"
-                      alt="artist"
-                    />
-                    <p className="ml-3">MoonDancer</p>
-                  </div>
-                  <div className="flex justify-between font-space">
-                    <p>
-                      <span className="text-caption">Price</span> <br />{' '}
-                      {item.price} ETH
-                    </p>
-                    <p>
-                      <span className="text-caption">Highest Bid</span> <br />{' '}
-                      {item.highestBid} wETH
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <NftCard
+                name={item.name}
+                nftImg={images[`nft${item.id}`]}
+                artistImg={images[`nftA`]}
+                artistName={item.artist}
+                price={item.price}
+                highestBid={item.highestBid}
+                bgColor={'bg-secondary'}
+              />
             </Link>
           ))}
         </div>

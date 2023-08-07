@@ -159,29 +159,29 @@ export const artistNftImgData = {
 
 // Marketplace NFT
 import ma1 from '@assets/ma1.svg';
-import maA1 from '@assets/nftA.svg';
+import maA1 from '@assets/cr07.svg';
 import ma2 from '@assets/ma2.svg';
-import maA2 from '@assets/nftA.svg';
+import maA2 from '@assets/cr08.svg';
 import ma3 from '@assets/ma3.svg';
-import maA3 from '@assets/nftA.svg';
+import maA3 from '@assets/cr08.svg';
 import ma4 from '@assets/ma4.svg';
-import maA4 from '@assets/nftA.svg';
+import maA4 from '@assets/cr06.svg';
 import ma5 from '@assets/ma5.svg';
-import maA5 from '@assets/nftA.svg';
+import maA5 from '@assets/cr01.svg';
 import ma6 from '@assets/ma6.svg';
-import maA6 from '@assets/nftA.svg';
+import maA6 from '@assets/cr15.svg';
 import ma7 from '@assets/ma7.svg';
-import maA7 from '@assets/nftA.svg';
+import maA7 from '@assets/cr07.svg';
 import ma8 from '@assets/ma8.svg';
-import maA8 from '@assets/nftA.svg';
+import maA8 from '@assets/cr13.svg';
 import ma9 from '@assets/ma9.svg';
-import maA9 from '@assets/nftA.svg';
+import maA9 from '@assets/cr10.svg';
 import ma10 from '@assets/ma10.svg';
-import maA10 from '@assets/nftA.svg';
+import maA10 from '@assets/cr12.svg';
 import ma11 from '@assets/ma11.svg';
-import maA11 from '@assets/nftA.svg';
+import maA11 from '@assets/cr17.svg';
 import ma12 from '@assets/ma12.svg';
-import maA12 from '@assets/nftA.svg';
+import maA12 from '@assets/cr02.svg';
 
 export const marketImgData = {
   ma1,

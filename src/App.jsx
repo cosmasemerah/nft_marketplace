@@ -1,14 +1,18 @@
+import { lazy } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Root from './pages/Root';
 import HomePage from './pages/Home';
-import SignUpPage from './pages/CreateAccount/SignUpPage';
-import ArtistPage from './pages/Artist/ArtistPage';
-import NftPage from './pages/Nft/NftPage';
-import Marketplace from './pages/Marketplace/Marketplace';
-import RankingsPage from './pages/Rankings/RankingsPage';
-import ConnectWalletPage from './pages/ConnectWallet/ConnectWalletPage';
 import ErrorPage from './pages/ErrorPage';
+
+const SignUpPage = lazy(() => import('./pages/CreateAccount/SignUpPage'));
+const ArtistPage = lazy(() => import('./pages/Artist/ArtistPage'));
+const NftPage = lazy(() => import('./pages/Nft/NftPage'));
+const ConnectWalletPage = lazy(() =>
+  import('./pages/ConnectWallet/ConnectWalletPage')
+);
+const Marketplace = lazy(() => import('./pages/Marketplace/Marketplace'));
+const Rankings = lazy(() => import('./pages/Rankings/RankingsPage'));
 
 const router = createBrowserRouter([
   {
@@ -16,13 +20,28 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
-      { path: '/', element: <HomePage /> },
-      { path: 'signup', element: <SignUpPage /> },
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: 'signup',
+        element: <SignUpPage />,
+      },
       { path: 'artist', element: <ArtistPage /> },
-      { path: 'nft', element: <NftPage /> },
-      { path: 'connectwallet', element: <ConnectWalletPage /> },
-      { path: 'marketplace', element: <Marketplace /> },
-      { path: 'rankings', element: <RankingsPage /> },
+      {
+        path: 'nft',
+        element: <NftPage />,
+      },
+      {
+        path: 'connectwallet',
+        element: <ConnectWalletPage />,
+      },
+      {
+        path: 'marketplace',
+        element: <Marketplace />,
+      },
+      { path: 'rankings', element: <Rankings /> },
     ],
   },
 ]);

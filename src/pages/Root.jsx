@@ -1,7 +1,9 @@
+import { Suspense } from 'react';
 import { Outlet, ScrollRestoration } from 'react-router-dom';
 
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import ProgressBar from '../utils/ProgressBar';
 
 const Root = () => {
   return (
@@ -9,7 +11,9 @@ const Root = () => {
       <Navbar />
       <main>
         <div className="flex flex-col">
-          <Outlet />
+          <Suspense fallback={<ProgressBar />}>
+            <Outlet />
+          </Suspense>
         </div>
       </main>
       <Footer />

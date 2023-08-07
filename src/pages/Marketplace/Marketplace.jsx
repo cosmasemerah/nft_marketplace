@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import db from '@db/marketplace.json';
 import { marketImgData as images } from '../../utils/imageData';
+import NftCard from '@components/NftCard';
 
 const Marketplace = () => {
   return (
@@ -48,7 +49,16 @@ const Marketplace = () => {
               } ${index >= 8 ? 'hidden lg:flex' : ''}`}
               key={item.id}
             >
-              <div className="flex flex-col justify-center rounded-2xl">
+              <NftCard
+                name={item.name}
+                nftImg={images[`ma${item.id}`]}
+                artistImg={images[`maA${item.id}`]}
+                artistName={item.artist}
+                price={item.price}
+                highestBid={item.highestBid}
+                bgColor={'bg-primary'}
+              />
+              {/* <div className="flex flex-col justify-center rounded-2xl">
                 <img
                   src={images[`ma${item.id}`]}
                   className="h-auto max-w-full rounded-t-2xl"
@@ -78,7 +88,7 @@ const Marketplace = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </Link>
           ))}
         </div>

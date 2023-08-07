@@ -70,14 +70,14 @@ export default {
         lg: '80rem', //1280px
       },
       backgroundImage: {
-        art: "url('/src/assets/cat01.svg')",
-        collectibles: "url('/src/assets/cat02.svg')",
-        music: "url('/src/assets/cat03.svg')",
-        photography: "url('/src/assets/cat04.svg')",
-        video: "url('/src/assets/cat05.svg')",
-        utility: "url('/src/assets/cat06.svg')",
-        sport: "url('/src/assets/cat07.svg')",
-        vrworld: "url('/src/assets/cat08.svg')",
+        art: "url('../src/assets/cat01.svg')",
+        collectibles: "url('../src/assets/cat02.svg')",
+        music: "url('../src/assets/cat03.svg')",
+        photography: "url('../src/assets/cat04.svg')",
+        video: "url('../src/assets/cat05.svg')",
+        utility: "url('../src/assets/cat06.svg')",
+        sport: "url('../src/assets/cat07.svg')",
+        vrworld: "url('../src/assets/cat08.svg')",
       },
       screens: {
         sm: '23.4375rem',
