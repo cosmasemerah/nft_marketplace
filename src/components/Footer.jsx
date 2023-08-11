@@ -1,12 +1,9 @@
 import logo from '../assets/Logo.svg';
-import discord from '../assets/DiscordLogo.svg';
-import youtube from '../assets/YoutubeLogo.svg';
-import twitter from '../assets/TwitterLogo.svg';
-import instagram from '../assets/InstagramLogo.svg';
 
 import SubscribeForm from './SubscribeWidget';
 import SubscribeTablet from './SubscribeForm';
 import { Link } from 'react-router-dom';
+import Socials from '../utils/Socials';
 
 const Footer = () => {
   return (
@@ -24,14 +21,7 @@ const Footer = () => {
             <div>
               <p className="mb-3.5 text-mute">Join our community</p>
               <div className="flex gap-2.5">
-                <img src={discord} alt="discord" className="cursor-pointer" />
-                <img src={youtube} alt="youtube" className="cursor-pointer" />
-                <img src={twitter} alt="twitter" className="cursor-pointer" />
-                <img
-                  src={instagram}
-                  alt="instagram"
-                  className="cursor-pointer"
-                />
+                <Socials />
               </div>
             </div>
           </div>

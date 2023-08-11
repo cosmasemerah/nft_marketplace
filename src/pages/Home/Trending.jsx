@@ -59,7 +59,11 @@ const TrendingCollections = () => {
               <div>
                 <h3 className="text-2xl font-semibold">{item.name}</h3>
                 <div className="flex items-center justify-start gap-1">
-                  <img src={images[`tre${item.id}3`]} alt="" />
+                  <img
+                    src={images[`tre${item.id}3`]}
+                    alt=""
+                    className="h-6 w-6 rounded-full"
+                  />
                   <p>{item.artist}</p>
                 </div>
               </div>

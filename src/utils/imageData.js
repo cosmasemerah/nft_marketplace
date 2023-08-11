@@ -1,16 +1,16 @@
 // Trending Collections
-import tre10 from '@assets/tre10.svg';
-import tre11 from '@assets/tre11.svg';
-import tre12 from '@assets/tre12.svg';
-import tre13 from '@assets/tre13.svg';
-import tre20 from '@assets/tre20.svg';
-import tre21 from '@assets/tre21.svg';
-import tre22 from '@assets/tre22.svg';
-import tre23 from '@assets/tre23.svg';
-import tre30 from '@assets/tre30.svg';
-import tre31 from '@assets/tre31.svg';
-import tre32 from '@assets/tre32.svg';
-import tre33 from '@assets/tre33.svg';
+import tre10 from '@assets/tre10.webp';
+import tre11 from '@assets/tre11.webp';
+import tre12 from '@assets/tre12.webp';
+import tre13 from '@assets/cr06.webp';
+import tre20 from '@assets/tre20.webp';
+import tre21 from '@assets/tre21.webp';
+import tre22 from '@assets/tre22.webp';
+import tre23 from '@assets/cr07.webp';
+import tre30 from '@assets/tre30.webp';
+import tre31 from '@assets/tre31.webp';
+import tre32 from '@assets/tre32.webp';
+import tre33 from '@assets/cr15.webp';
 
 export const trendingImgData = {
   tre10,
@@ -28,26 +28,26 @@ export const trendingImgData = {
 };
 
 //Top Creators
-import cr1 from '@assets/cr01.svg';
-import cr2 from '@assets/cr02.svg';
-import cr3 from '@assets/cr03.svg';
-import cr4 from '@assets/cr04.svg';
-import cr5 from '@assets/cr05.svg';
-import cr6 from '@assets/cr06.svg';
-import cr7 from '@assets/cr07.svg';
-import cr8 from '@assets/cr08.svg';
-import cr9 from '@assets/cr09.svg';
-import cr10 from '@assets/cr10.svg';
-import cr11 from '@assets/cr11.svg';
-import cr12 from '@assets/cr12.svg';
-import cr13 from '@assets/cr13.svg';
-import cr14 from '@assets/cr14.svg';
-import cr15 from '@assets/cr15.svg';
-import cr16 from '@assets/cr16.svg';
-import cr17 from '@assets/cr17.svg';
-import cr18 from '@assets/cr08.svg';
-import cr19 from '@assets/cr09.svg';
-import cr20 from '@assets/cr10.svg';
+import cr1 from '@assets/cr01.webp';
+import cr2 from '@assets/cr02.webp';
+import cr3 from '@assets/cr03.webp';
+import cr4 from '@assets/cr04.webp';
+import cr5 from '@assets/cr05.webp';
+import cr6 from '@assets/cr06.webp';
+import cr7 from '@assets/cr07.webp';
+import cr8 from '@assets/cr08.webp';
+import cr9 from '@assets/cr09.webp';
+import cr10 from '@assets/cr10.webp';
+import cr11 from '@assets/cr11.webp';
+import cr12 from '@assets/cr12.webp';
+import cr13 from '@assets/cr13.webp';
+import cr14 from '@assets/cr14.webp';
+import cr15 from '@assets/cr15.webp';
+import cr16 from '@assets/cr06.webp';
+import cr17 from '@assets/cr17.webp';
+import cr18 from '@assets/cr08.webp';
+import cr19 from '@assets/cr09.webp';
+import cr20 from '@assets/cr10.webp';
 
 export const topCreatorsImgData = {
   cr1,
@@ -78,24 +78,25 @@ export const top12Creators = Object.fromEntries(
 );
 
 // Discover more data
-import dis1 from '@assets/dis1.svg';
-import disA1 from '@assets/disA1.svg';
-import dis2 from '@assets/dis2.svg';
-import disA2 from '@assets/disA2.svg';
-import dis3 from '@assets/dis3.svg';
-import disA3 from '@assets/disA3.svg';
-import dis4 from '@assets/dis4.svg';
-import disA4 from '@assets/disA4.svg';
-import dis5 from '@assets/dis5.svg';
-import disA5 from '@assets/disA4.svg';
-import dis6 from '@assets/dis6.svg';
-import disA6 from '@assets/disA4.svg';
-import dis7 from '@assets/dis7.svg';
-import disA7 from '@assets/disA4.svg';
-import dis8 from '@assets/dis8.svg';
-import disA8 from '@assets/disA4.svg';
-import dis9 from '@assets/dis9.svg';
-import disA9 from '@assets/disA4.svg';
+import dis1 from '@assets/dis1.webp';
+import disA1 from '@assets/cr03.webp';
+import dis2 from '@assets/dis2.webp';
+import disA2 from '@assets/cr13.webp';
+import dis3 from '@assets/dis3.webp';
+import disA3 from '@assets/cr10.webp';
+import dis4 from '@assets/dis4.webp';
+import disA4 from '@assets/cr11.webp';
+import dis5 from '@assets/dis5.webp';
+import disA5 from '@assets/cr05.webp';
+import dis6 from '@assets/dis6.webp';
+import disA6 from '@assets/cr06.webp';
+import dis7 from '@assets/dis7.webp';
+import disA7 from '@assets/cr08.webp';
+import dis8 from '@assets/tre32.webp';
+import disA8 from '@assets/cr04.webp';
+import dis9 from '@assets/dis9.webp';
+import disA9 from '@assets/cr02.webp';
+import coverArtist from '@assets/artBg.webp';
 
 export const discoverMoreNftImgData = {
   dis1,
@@ -116,6 +117,7 @@ export const discoverMoreNftImgData = {
   disA8,
   dis9,
   disA9,
+  coverArtist,
 };
 
 // Discover new trending data
@@ -133,16 +135,17 @@ export const highlightImgData = {
 };
 
 // More from Artist
-import nft1 from '@assets/nft1.svg';
-import nft2 from '@assets/nft2.svg';
-import nft3 from '@assets/nft3.svg';
-import nft4 from '@assets/nft4.svg';
-import nft5 from '@assets/nft5.svg';
-import nft6 from '@assets/nft6.svg';
-import nft7 from '@assets/nft7.svg';
-import nft8 from '@assets/nft8.svg';
-import nft9 from '@assets/nft9.svg';
-import nftA from '@assets/nftA.svg';
+import nft1 from '@assets/nft1.webp';
+import nft2 from '@assets/tre11.webp';
+import nft3 from '@assets/tre10.webp';
+import nft4 from '@assets/tre12.webp';
+import nft5 from '@assets/nft5.webp';
+import nft6 from '@assets/tre32.webp';
+import nft7 from '@assets/tre31.webp';
+import nft8 from '@assets/tre30.webp';
+import nft9 from '@assets/nft9.webp';
+import nftA from '@assets/cr09.webp';
+import cover from '@assets/nftBg.webp';
 
 export const artistNftImgData = {
   nft1,
@@ -155,33 +158,34 @@ export const artistNftImgData = {
   nft8,
   nft9,
   nftA,
+  cover,
 };
 
 // Marketplace NFT
-import ma1 from '@assets/ma1.svg';
-import maA1 from '@assets/cr07.svg';
-import ma2 from '@assets/ma2.svg';
-import maA2 from '@assets/cr08.svg';
-import ma3 from '@assets/ma3.svg';
-import maA3 from '@assets/cr08.svg';
-import ma4 from '@assets/ma4.svg';
-import maA4 from '@assets/cr06.svg';
-import ma5 from '@assets/ma5.svg';
-import maA5 from '@assets/cr01.svg';
-import ma6 from '@assets/ma6.svg';
-import maA6 from '@assets/cr15.svg';
-import ma7 from '@assets/ma7.svg';
-import maA7 from '@assets/cr07.svg';
-import ma8 from '@assets/ma8.svg';
-import maA8 from '@assets/cr13.svg';
-import ma9 from '@assets/ma9.svg';
-import maA9 from '@assets/cr10.svg';
-import ma10 from '@assets/ma10.svg';
-import maA10 from '@assets/cr12.svg';
-import ma11 from '@assets/ma11.svg';
-import maA11 from '@assets/cr17.svg';
-import ma12 from '@assets/ma12.svg';
-import maA12 from '@assets/cr02.svg';
+import ma1 from '@assets/tre21.webp';
+import maA1 from '@assets/cr07.webp';
+import ma2 from '@assets/ma2.webp';
+import maA2 from '@assets/cr08.webp';
+import ma3 from '@assets/ma3.webp';
+import maA3 from '@assets/cr08.webp';
+import ma4 from '@assets/tre12.webp';
+import maA4 from '@assets/cr06.webp';
+import ma5 from '@assets/ma5.webp';
+import maA5 from '@assets/cr01.webp';
+import ma6 from '@assets/ma6.webp';
+import maA6 from '@assets/cr15.webp';
+import ma7 from '@assets/ma7.webp';
+import maA7 from '@assets/cr07.webp';
+import ma8 from '@assets/ma8.webp';
+import maA8 from '@assets/cr13.webp';
+import ma9 from '@assets/ma9.webp';
+import maA9 from '@assets/cr10.webp';
+import ma10 from '@assets/ma10.webp';
+import maA10 from '@assets/cr12.webp';
+import ma11 from '@assets/ma11.webp';
+import maA11 from '@assets/cr17.webp';
+import ma12 from '@assets/ma12.webp';
+import maA12 from '@assets/cr02.webp';
 
 export const marketImgData = {
   ma1,

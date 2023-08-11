@@ -3,7 +3,14 @@ const NftCard = (props) => {
     props;
   return (
     <div className={`flex flex-col justify-center rounded-2xl ${bgColor}`}>
-      <img src={nftImg} className="h-auto w-full rounded-t-2xl" alt="" />
+      <div className="h-60 w-xs md:h-[296px] md:w-[330px]">
+        <img
+          src={nftImg}
+          className="h-full w-full rounded-t-2xl object-cover"
+          alt=""
+        />
+      </div>
+
       <div className="p-5 pb-[25px]">
         <h3 className="mb-[5px] text-2xl font-semibold">{name}</h3>
         <div className="mb-[25px] flex items-center">
