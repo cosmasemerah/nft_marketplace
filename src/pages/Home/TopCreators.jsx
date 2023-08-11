@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import rocket from '@assets/RocketLaunch02.svg';
 import Button from '@components/Button';
 
 import db from '@db/creators.json';
