@@ -1,4 +1,4 @@
-import acct3 from '../../assets/acct03.svg';
+import acct3 from '../../assets/acct03.webp';
 
 import Button from '../../components/Button';
 

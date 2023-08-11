@@ -1,4 +1,4 @@
-import connImg from '../../assets/conn.svg';
+import connImg from '../../assets/conn.webp';
 
 const ConnectWalletPage = () => {
   const newLocal = 'round';

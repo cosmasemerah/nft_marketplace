@@ -4,7 +4,7 @@ import db from '@db/discover.json';
 import { discoverMoreNftImgData as images } from '../../utils/imageData';
 
 import NftCard from '@components/NftCard';
-import Socials from '../utils/Socials';
+import Socials from '../../utils/Socials';
 
 const ArtistPage = () => {
   return (
