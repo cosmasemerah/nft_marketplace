@@ -126,8 +126,8 @@ export const topDiscoverNftImgData = Object.fromEntries(
 );
 
 // Highlight NFT
-import hiArtist from '@assets/disA4.svg';
-import hiBg from '@assets/highlightBg.svg';
+import hiArtist from '@assets/cr07.webp';
+import hiBg from '@assets/highlight.webp';
 
 export const highlightImgData = {
   hiArtist,
