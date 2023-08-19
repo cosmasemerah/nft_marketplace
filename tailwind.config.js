@@ -71,14 +71,14 @@ export default {
         lg: '80rem', //1280px
       },
       backgroundImage: {
-        art: "url('../src/assets/cat01.webp')",
-        collectibles: "url('../src/assets/cat02.webp')",
-        music: "url('../src/assets/cat03.webp')",
-        photography: "url('../src/assets/cat04.webp')",
-        video: "url('../src/assets/cat05.webp')",
-        utility: "url('../src/assets/cat06.webp')",
-        sport: "url('../src/assets/cat07.webp')",
-        vrworld: "url('../src/assets/cat08.webp')",
+        art: "url('/src/assets/cat01.webp')",
+        collectibles: "url('/src/assets/cat02.webp')",
+        music: "url('/src/assets/cat03.webp')",
+        photography: "url('/src/assets/cat04.webp')",
+        video: "url('/src/assets/cat05.webp')",
+        utility: "url('/src/assets/cat06.webp')",
+        sport: "url('/src/assets/cat07.webp')",
+        vrworld: "url('/src/assets/cat08.webp')",
       },
       screens: {
         sm: '23.4375rem',
