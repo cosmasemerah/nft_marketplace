@@ -2,8 +2,10 @@ const NftCard = (props) => {
   const { name, nftImg, artistImg, artistName, price, highestBid, bgColor } =
     props;
   return (
-    <div className={`flex flex-col justify-center rounded-2xl ${bgColor}`}>
-      <div className="h-60 w-xs md:h-[296px] md:w-[330px]">
+    <div
+      className={`flex flex-col justify-center rounded-2xl ${bgColor} w-xs md:w-[330px]`}
+    >
+      <div className="h-60 md:h-[296px]">
         <img
           src={nftImg}
           className="h-full w-full rounded-t-2xl object-cover"
